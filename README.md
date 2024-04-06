@@ -1,4 +1,4 @@
 # placeK
 OOAD project
 
-![UML image](/placeKuml.png)
+<p align="center"> ![UML image](/placeKuml.png) </p>
