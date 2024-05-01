@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-01T07:11:23.652Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="dtl_9_Q1jy_teJqiZPRJ" version="24.3.1" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2024-05-01T07:39:00.418Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15" etag="cJPiCsBUBReqta2y1f_u" version="24.3.1" type="github" pages="7">
   <diagram name="회원가입" id="2YBvvXClWsGukQMizWep">
-    <mxGraphModel dx="1224" dy="625" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="849" dy="1054" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -66,7 +66,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="lmq6LwTFipSiw43jhtWt-25" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="387.5" y="224" width="10" height="40" as="geometry" />
+          <mxGeometry x="387.5" y="239" width="10" height="40" as="geometry" />
         </mxCell>
         <mxCell id="lmq6LwTFipSiw43jhtWt-26" value="2: checkPassword(pw, checkpw)" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;fontSize=12;startSize=8;endSize=8;" parent="1" edge="1">
           <mxGeometry x="0.2331" relative="1" as="geometry">
