@@ -3,13 +3,13 @@ package model;
 import java.util.Date;
 
 public class Seat {
-    public int seatNum;
+    public String seatNum;
     public int locationID;
     public boolean isRented;
-    public Date rentTime;
-    public int rentedBy;
+    public String rentTime;
+    public String rentedBy;
 
-    public Seat(int seatNum, int locationID, boolean isRented, Date rentTime, int rentedBy) {
+    public Seat(int locationID, String seatNum, boolean isRented, String rentTime, String rentedBy) {
         this.seatNum = seatNum;
         this.locationID = locationID;
         this.isRented = isRented;
@@ -17,11 +17,11 @@ public class Seat {
         this.rentedBy = rentedBy;
     }
 
-    public void setSeatNum(int seatNum) {
+    public void setSeatNum(String seatNum) {
         this.seatNum = seatNum;
     }
 
-    public int getSeatNum() {
+    public String getSeatNum() {
         return seatNum;
     }
 
@@ -41,19 +41,19 @@ public class Seat {
         return isRented;
     }
 
-    public void setRentTime(Date rentTime) {
+    public void setRentTime(String rentTime) {
         this.rentTime = rentTime;
     }
 
-    public Date getRentTime() {
+    public String getRentTime() {
         return rentTime;
     }
 
-    public void setRentedBy(int rentedBy) {
+    public void setRentedBy(String rentedBy) {
         this.rentedBy = rentedBy;
     }
 
-    public int getRentedBy() {
+    public String getRentedBy() {
         return rentedBy;
     }
 

@@ -1,24 +1,30 @@
 package model;
 
 public class User {
-    private int id;
+    private int userId;
     private String password;
     private String major;
     private boolean isRented;
+    private int locationID;
+    private String seatNum;
+    private String rentedTime;
 
-    public User(int id, String password, String major, boolean isRented) {
-        this.id = id;
+    public User(int userId, String password, String major, boolean isRented, int locationID, String seatNum, String rentedTime) {
+        this.userId = userId;
         this.password = password;
         this.major = major;
         this.isRented = isRented;
+        this.locationID = locationID;
+        this.seatNum = seatNum;
+        this.rentedTime = rentedTime;
     }
 
     public void setID(int id) {
-        this.id = id;
+        this.userId = id;
     }
 
     public int getID() {
-        return id;
+        return userId;
     }
 
     public void setPassword(String password) {
@@ -45,4 +51,23 @@ public class User {
         return isRented;
     }
 
+    public void setLocationID(int locationID) {this.locationID = locationID; }
+
+    public int getLocationID() { return locationID; }
+
+    public void setSeatNum(String seatNum) {
+        this.seatNum = seatNum;
+    }
+
+    public String getSeatNum() {
+        return seatNum;
+    }
+
+    public void setRentedTime(String rentedTime) {
+        this.rentedTime = rentedTime;
+    }
+
+    public String getRentedTime() {
+        return rentedTime;
+    }
 }
