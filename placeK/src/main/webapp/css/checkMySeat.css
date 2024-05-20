@@ -1,0 +1,54 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #eff3f7;
+}
+
+.rectangle {
+    position: absolute;
+    width: 75%;
+    min-width: 700px;
+    max-width: 900px;
+    min-height: 450px;
+    height: 60%;
+    left: 50%;
+    transform: translate(-50%);
+    top: 155px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userImage img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.userInformation {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seatInfo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}

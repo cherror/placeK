@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="../css/sign.css" />
+</head>
+
+<body>
+<div class="sign-container">
+    <div class="sign-box">
+        <div class="sign-title">Create an Account</div>
+        <div class="sign-subtitle">
+            PlaceK : KMU Seat Reservation System
+        </div>
+        <form class="sign-form">
+            <input
+                    class="sign-field"
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter your ID"
+            />
+            <select class="sign-field" id="major" name="major">
+                <option value="" disabled selected>
+                    Select your major
+                </option>
+                <option value="Computer Science">
+                    Computer Science
+                </option>
+                <option value="Computer Science">
+                    Computer Science
+                </option>
+                <option value="Electrical Engineering">
+                    Electrical Engineering
+                </option>
+                <option value="Mechanical Engineering">
+                    Mechanical Engineering
+                </option>
+                <option value="Civil Engineering">
+                    Civil Engineering
+                </option>
+                <option value="Chemical Engineering">
+                    Chemical Engineering
+                </option>
+            </select>
+            <input
+                    class="sign-field"
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+            />
+            <input
+                    class="sign-field"
+                    type="password"
+                    id="passwordCheck"
+                    name="passwordCheck"
+                    placeholder="Check your password again"
+            />
+            <button type="submit" class="signup-button">
+                <span class="sign-button-text">Sign up</span>
+            </button>
+            <a href="html/signinPage.html" class="move-to-signin">
+                        <span class="move-to-signin-text"
+                        >Already have an account?</span
+                        >
+            </a>
+        </form>
+    </div>
+</div>
+</body>
+<script src="/js/script.js"></script>
+</html>
