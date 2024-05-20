@@ -29,25 +29,25 @@ public class SignupServlet extends HttpServlet {
         String major = request.getParameter("major");
         String password = request.getParameter("password");
         String passwordCheck = request.getParameter("passwordCheck");
-
         // 데이터 확인
         if(userID.isEmpty() || major.isEmpty() || password.isEmpty() || passwordCheck.isEmpty()){
-            response.getWriter().println("빈칸을 채워주세요.");
+            //아 한글 깨짐 하지만 괜찮아 아니아 안괜찮아 괜찮아 ..
+            System.out.println("빈칸을 채워주세요.");
             return;
         } else if(!userID.matches("\\d+")){
-            response.getWriter().println("ID는 숫자로만 구성되어야 합니다.");
+            System.out.println("ID는 숫자로만 구성되어야 합니다.");
             return;
         } else if (!password.equals(passwordCheck)) {
-            response.getWriter().println("비밀번호가 일치하지 않습니다.");
+            System.out.println("비밀번호가 일치하지 않습니다.");
             return;
         } else {
             int userIDInt = Integer.parseInt(userID);
             User user = new User(userIDInt, password, major, false, -1, null, null);
             boolean isCreated = userController.createUser(user);
             if (isCreated) {
-                response.getWriter().println("회원가입 성공");
+                System.out.println("회원가입 성공");
             } else {
-                response.getWriter().println("회원가입 실패");
+                System.out.println("회원가입 실패. 해당 ID가 존재합니다.");
             }
         }
     }
