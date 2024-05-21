@@ -46,8 +46,7 @@ public class SignInServlet extends HttpServlet {
             User user = userController.getUserInfo(userIDInt);
             HttpSession session = request.getSession();
             session.setAttribute("user", user);
-            response.sendRedirect("../../html/modal/rentedSeat.html");
-//            response.sendRedirect("../../html/chooseOption.html");
+            response.sendRedirect("../../html/chooseOption.html");
         } else {
             System.out.println("로그인 실패");
         }
