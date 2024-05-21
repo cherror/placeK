@@ -52,6 +52,15 @@
     <url-pattern>/mss</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>CheckMySeatServlet</servlet-name>
+    <servlet-class>servlet.CheckMySeatServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckMySeatServlet</servlet-name>
+    <url-pattern>/checkMySeat</url-pattern>
+  </servlet-mapping>
+
   <listener>
     <listener-class>res.AppContextListener</listener-class>
   </listener>

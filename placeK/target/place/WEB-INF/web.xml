@@ -9,7 +9,7 @@
 
   <servlet>
     <servlet-name>SignupServlet</servlet-name>
-    <servlet-class>servlet.SignupServlet</servlet-class>
+    <servlet-class>servlet.SignUpServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>SignupServlet</servlet-name>
@@ -50,6 +50,15 @@
   <servlet-mapping>
     <servlet-name>MSSServlet</servlet-name>
     <url-pattern>/mss</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>CheckMySeatServlet</servlet-name>
+    <servlet-class>servlet.CheckMySeatServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckMySeatServlet</servlet-name>
+    <url-pattern>/checkMySeat</url-pattern>
   </servlet-mapping>
 
   <listener>

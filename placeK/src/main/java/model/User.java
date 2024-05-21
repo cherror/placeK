@@ -70,4 +70,8 @@ public class User {
     public String getRentedTime() {
         return rentedTime;
     }
+
+    public String getSeatNumber() {
+        return seatNum.replaceAll("\\D+", "");
+    }
 }
