@@ -1,6 +1,6 @@
 <!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -13,7 +13,43 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>SignupServlet</servlet-name>
-    <url-pattern>/signup</url-pattern>
+    <url-pattern>/signUp</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SignInServlet</servlet-name>
+    <servlet-class>servlet.SignInServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignInServlet</servlet-name>
+    <url-pattern>/signIn</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DisplaySeatServlet</servlet-name>
+    <servlet-class>servlet.DisplaySeatServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplaySeatServlet</servlet-name>
+    <url-pattern>/displayseat</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>JJSServlet</servlet-name>
+    <servlet-class>servlet.JJSServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JJSServlet</servlet-name>
+    <url-pattern>/displaySeat/jjs</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>MSSServlet</servlet-name>
+    <servlet-class>servlet.MSSServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MSSServlet</servlet-name>
+    <url-pattern>/mss</url-pattern>
   </servlet-mapping>
 
   <listener>

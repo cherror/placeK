@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet("/servlet/signUp")
-public class SignupServlet extends HttpServlet {
+public class SignUpServlet extends HttpServlet {
 
     private UserController userController;
 
@@ -31,12 +31,11 @@ public class SignupServlet extends HttpServlet {
         String passwordCheck = request.getParameter("passwordCheck");
 
         // 데이터 확인
-        if(userID.isEmpty() || major == null || password.isEmpty() || passwordCheck.isEmpty()){
+        if(userID.isEmpty() || major.isEmpty() || password.isEmpty() || passwordCheck.isEmpty()){
+            //아 한글 깨짐 하지만 괜찮아 아니아 안괜찮아 괜찮아 ..
             System.out.println("빈칸을 채워주세요.");
             return;
         } else if(!userID.matches("\\d+")){
-            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-            response.getWriter().write("ID는 숫자로만 구성되어야 합니다.");
             System.out.println("ID는 숫자로만 구성되어야 합니다.");
             return;
         } else if (!password.equals(passwordCheck)) {
@@ -47,7 +46,6 @@ public class SignupServlet extends HttpServlet {
             User user = new User(userIDInt, password, major, false, -1, null, null);
             boolean isCreated = userController.createUser(user);
             if (isCreated) {
-                response.sendRedirect("../../html/signin.html");
                 System.out.println("회원가입 성공");
                 // 회원가입이 성공하면 로그인 페이지로 이동
                 response.sendRedirect(request.getContextPath() + "/html/signIn.html");
