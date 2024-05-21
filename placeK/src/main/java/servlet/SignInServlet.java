@@ -1,29 +1,54 @@
 package servlet;
 
 import controller.UserController;
+import model.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.Map;
 
 @WebServlet("/servlet/signIn")
 public class SignInServlet extends HttpServlet {
     private UserController userController;
 
+    @Override
+    public void init() throws ServletException {
+        this.userController = (UserController) getServletContext().getAttribute("userController");
+        if (this.userController == null) {
+            throw new ServletException("UserController not initialized!");
+        }
+    }
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // 폼 데이터 가져오기
-        String userID = request.getParameter("userID");
+        String userID = request.getParameter("username");
         String password = request.getParameter("password");
 
-        // 여기서 데이터베이스에 사용자 정보를 저장하거나 다른 처리를 합니다.
-        // 예시로 사용자 정보를 콘솔에 출력합니다.
-        System.out.println("Username: " + userID);
-        System.out.println("Password: " + password);
+        int userIDInt;
+        try {
+            userIDInt = Integer.parseInt(userID);
+        } catch (NumberFormatException e) {
+            //로그인 실패 시 모달 띄우기
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            response.getWriter().write("ID must be an integer");
+            return;
+        }
 
-        // 성공 메시지를 응답으로 보냅니다.
+        Map<String, Object> loginResult = userController.loginUser(userIDInt, password);
+        if ((Boolean) loginResult.get("status")) {
+            System.out.println("로그인 성공");
+
+            //user 정보 객체에 저장
+            User user = userController.getUserInfo(userIDInt);
+            HttpSession session = request.getSession();
+            session.setAttribute("user", user);
+
+            response.sendRedirect("../../html/chooseOption.html");
+        }
         response.getWriter().println("Sign up successful!");
     }
 }
