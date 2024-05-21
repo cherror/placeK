@@ -61,6 +61,15 @@
     <url-pattern>/checkMySeat</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>ChooseOptionServlet</servlet-name>
+    <servlet-class>servlet.ChooseOptionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChooseOptionServlet</servlet-name>
+    <url-pattern>/chooseOption</url-pattern>
+  </servlet-mapping>
+
   <listener>
     <listener-class>res.AppContextListener</listener-class>
   </listener>

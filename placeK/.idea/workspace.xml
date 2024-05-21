@@ -10,20 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="feat: 로그인 시 DB 조회 및 세션 유저 정보 저장">
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/CheckMySeatServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/ChooseOptionServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/SignInServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/SignInServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/checkMySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/checkMySeat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/chooseOption.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/chooseOption.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/html/signIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/signIn.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/html/signUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/signUp.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/servlet/SignInServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/SignInServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/SignupServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/SignupServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/SignInServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/SignInServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/SignupServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/SignupServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/checkMySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/checkMySeat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/html/chooseOption.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/chooseOption.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +31,8 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -199,7 +195,7 @@
       <updated>1716189571257</updated>
       <workItem from="1716189572373" duration="9542000" />
       <workItem from="1716288801071" duration="3803000" />
-      <workItem from="1716292624769" duration="994000" />
+      <workItem from="1716292624769" duration="5173000" />
     </task>
     <servers />
   </component>

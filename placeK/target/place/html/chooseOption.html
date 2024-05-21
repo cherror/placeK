@@ -12,13 +12,13 @@
   <div class="choose-box">
     <div class="title">Which service would you want?</div>
     <div class="option-container">
-      <button class="option">
+      <button class="option" id="displaySeatBtn">
         <div class="option-content">
           <img src="/img/chair-icon.png" alt="option1" />
           <span>Select a Seat</span>
         </div>
       </button>
-      <button class="option">
+      <button class="option" id="checkMySeatBtn">
         <div class="option-content">
           <img src="/img/studying-icon.png" alt="option2" />
           <span>Check your Seat</span>
@@ -28,6 +28,25 @@
   </div>
   <a href="signin.html" class="logout-link">Logout</a>
 </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("displaySeatBtn").addEventListener("click", function() {
+      window.location.href = "displaySeat.html";  // 또는 절대 경로로 변경 가능
+    });
+
+    document.getElementById("checkMySeatBtn").addEventListener("click", function() {
+      fetch("/servlet/chooseOption")
+              .then(response => response.json())
+              .then(user => {
+                if (user.isRented === false) {
+                } else {
+                  window.location.href = "checkMySeat.html";
+                }
+              })
+              .catch(error => console.error("Error fetching user session:", error));
+    });
+  });
+</script>
 </body>
 </html>
 
