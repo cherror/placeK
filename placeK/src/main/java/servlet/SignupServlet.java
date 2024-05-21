@@ -50,7 +50,7 @@ public class SignupServlet extends HttpServlet {
                 response.sendRedirect("../../html/signin.html");
                 System.out.println("회원가입 성공");
                 // 회원가입이 성공하면 로그인 페이지로 이동
-                response.sendRedirect(request.getContextPath() + "/html/signIn.html");
+                response.sendRedirect(request.getContextPath() + "/html/signin.html");
             } else {
                 System.out.println("회원가입 실패. 해당 ID가 존재합니다.");
                 // 회원가입이 실패하면 회원가입 페이지로 이동
