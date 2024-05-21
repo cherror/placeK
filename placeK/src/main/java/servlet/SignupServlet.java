@@ -30,11 +30,12 @@ public class SignupServlet extends HttpServlet {
         String password = request.getParameter("password");
         String passwordCheck = request.getParameter("passwordCheck");
         // 데이터 확인
-        if(userID.isEmpty() || major.isEmpty() || password.isEmpty() || passwordCheck.isEmpty()){
-            //아 한글 깨짐 하지만 괜찮아 아니아 안괜찮아 괜찮아 ..
+        if(userID.isEmpty() || major == null || password.isEmpty() || passwordCheck.isEmpty()){
             System.out.println("빈칸을 채워주세요.");
             return;
         } else if(!userID.matches("\\d+")){
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            response.getWriter().write("ID는 숫자로만 구성되어야 합니다.");
             System.out.println("ID는 숫자로만 구성되어야 합니다.");
             return;
         } else if (!password.equals(passwordCheck)) {
@@ -45,6 +46,7 @@ public class SignupServlet extends HttpServlet {
             User user = new User(userIDInt, password, major, false, -1, null, null);
             boolean isCreated = userController.createUser(user);
             if (isCreated) {
+                response.sendRedirect("../../html/signin.html");
                 System.out.println("회원가입 성공");
             } else {
                 System.out.println("회원가입 실패. 해당 ID가 존재합니다.");
