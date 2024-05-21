@@ -57,4 +57,8 @@ public class Seat {
         return rentedBy;
     }
 
+    public String getSeatNumber() {
+        return seatNum.replaceAll("\\D+", "");
+    }
+
 }

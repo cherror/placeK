@@ -70,6 +70,15 @@
     <url-pattern>/chooseOption</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>RentedSeatServlet</servlet-name>
+    <servlet-class>servlet.RentedSeatServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RentedSeatServlet</servlet-name>
+    <url-pattern>/rentedSeat</url-pattern>
+  </servlet-mapping>
+
   <listener>
     <listener-class>res.AppContextListener</listener-class>
   </listener>

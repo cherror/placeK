@@ -39,6 +39,7 @@
               .then(response => response.json())
               .then(user => {
                 if (user.isRented === false) {
+                  //좌석 선택 후 이용 가능 경고문 띄우기
                 } else {
                   window.location.href = "checkMySeat.html";
                 }
