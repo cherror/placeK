@@ -10,47 +10,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/placeK.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/DisplaySeatServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/JJSServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/MSSServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/SignInServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/SignUpServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/signIn.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/html/signUp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/servlet/DisplaySeatServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/servlet/JJSServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/servlet/MSSServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/servlet/SignInServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/res/MongoDBConnectionManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/DisplaySeatServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/JJSServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/MSSServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/SignInServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/SignupServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/SignupServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/BusinessServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/ChooseOptionServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/KsmartLoungeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/LawServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/chair-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/studying-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/displaySeat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/DisplaySeatServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/DisplaySeatServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/JJSServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/JJSServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/MSSServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/MSSServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/SignUpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/SignUpServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/chooseOption.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/chooseOption.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/displaySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/displaySeat.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/html/chooseOption.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/chooseOption.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/KsmartLounge.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/KsmartLounge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/business.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/business.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/signin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/SignupServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/SignupServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/SignupServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/SignupServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/law.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/law.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/mss.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/mss.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/signIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/signIn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/signUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/signUp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/chooseOption.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/DisplaySeatServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/DisplaySeatServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/JJSServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/JJSServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/MSSServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/MSSServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/DisplaySeatServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/DisplaySeatServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/JJSServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/JJSServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/MSSServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/MSSServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/css/chooseOption.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/css/chooseOption.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/css/displaySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/css/displaySeat.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/html/chooseOption.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/chooseOption.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/KsmartLounge.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/KsmartLounge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/business.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/business.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/jjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/jjs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/signin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/law.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/law.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/mss.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/mss.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/js/script.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +66,15 @@
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" root0="SKIP_INSPECTION" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -87,24 +94,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Tomcat 서버.Tomcat 9.0.89.executor&quot;: &quot;Run&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat 서버.Tomcat 9.0.89.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/91ut0/Desktop/placeK/placeK/placeK/src/main/webapp/img",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/img" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.89" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.89" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />

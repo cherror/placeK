@@ -26,12 +26,21 @@
   </servlet-mapping>
 
   <servlet>
+    <servlet-name>ChooseOptionServlet</servlet-name>
+    <servlet-class>servlet.ChooseOptionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChooseOptionServlet</servlet-name>
+    <url-pattern>/chooseOption</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
     <servlet-name>DisplaySeatServlet</servlet-name>
     <servlet-class>servlet.DisplaySeatServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>DisplaySeatServlet</servlet-name>
-    <url-pattern>/displayseat</url-pattern>
+    <url-pattern>/displaySeat</url-pattern>
   </servlet-mapping>
 
   <servlet>
@@ -49,9 +58,18 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>MSSServlet</servlet-name>
-    <url-pattern>/mss</url-pattern>
+    <url-pattern>/displaySeat/mss</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>KsmartLoungeServlet</servlet-name>
+    <servlet-class>servlet.KsmartLoungeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>KsmartLoungeServlet</servlet-name>
+    <url-pattern>/displaySeat/KsmartLounge</url-pattern>
+  </servlet-mapping>
+  
   <listener>
     <listener-class>res.AppContextListener</listener-class>
   </listener>

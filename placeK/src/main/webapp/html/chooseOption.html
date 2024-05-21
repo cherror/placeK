@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Choose an Option</title>
-  <link rel="stylesheet" href="../css/chooseOption.css" />
+  <link rel="stylesheet" href="/css/chooseOption.css" />
+  <script src="/js/chooseOption.js" defer></script>
 </head>
 
 <body>
@@ -12,23 +13,30 @@
   <div class="choose-box">
     <div class="title">Which service would you want?</div>
     <div class="option-container">
-      <button class="option">
-        <div class="option-content">
-          <img src="/img/chair-icon.png" alt="option1" />
-          <span>Select a Seat</span>
-        </div>
-      </button>
-      <button class="option">
-        <div class="option-content">
-          <img src="/img/studying-icon.png" alt="option2" />
-          <span>Check your Seat</span>
-        </div>
-      </button>
+      <form id="chooseForm" method="post" action="/servlet/chooseOption">
+        <input type="hidden" id="actionInput" name="action" value="">
+        <button type="button" id="selectSeatBtn" class="option" onclick="submitForm('selectSeat')">
+          <div class="option-content">
+            <img src="/img/chair-icon.png" alt="option1" />
+            <span>Select a Seat</span>
+          </div>
+        </button>
+        <button type="button" id="checkSeatBtn" class="option" onclick="submitForm('checkSeat')">
+          <div class="option-content">
+            <img src="/img/studying-icon.png" alt="option2" />
+            <span>Check your Seat</span>
+          </div>
+        </button>
+      </form>
     </div>
   </div>
-  <a href="signin.html" class="logout-link">Logout</a>
+  <a href="/html/signin.html" class="logout-link">Logout</a>
 </div>
+<script>
+  function submitForm(action) {
+    document.getElementById('actionInput').value = action;
+    document.getElementById('chooseForm').submit();
+  }
+</script>
 </body>
 </html>
-
-<script src="js/script.js"></script>

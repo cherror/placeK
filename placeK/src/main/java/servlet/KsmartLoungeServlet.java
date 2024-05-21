@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/servlet/mms")
-public class MSSServlet extends DisplaySeatServlet {
-
+@WebServlet("/servlet/displaySeat/KsmartLounge")
+public class KsmartLoungeServlet extends HttpServlet {
 }

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>자율 주행 스튜디오</title>
     <link rel="stylesheet" href="/css/displaySeat.css" />
+    <script src="/js/displaySeat.js"></script>
 </head>
-
 <body>
 <div class="container">
     <div class="seat-info">
@@ -30,9 +30,8 @@
                     class="selectLocationBtn"
                     id="selectLocationBtn"
                     name="selectLocationBtn"
-                    onclick="submitForm()"
             >
-            좌석 확인
+                좌석 확인
             </button>
         </div>
     </div>
@@ -42,80 +41,145 @@
             <div class="displaySeat-JJS-Box">
                 <div>
                     <div class="displaySeat-JJS-container">
-                        <div id="seat1" class="seat"><div class="seat-info-text">1</div></div>
-                        <div id="seat2" class="seat"><div class="seat-info-text">2</div></div>
-                        <div id="seat3" class="seat"><div class="seat-info-text">3</div></div>
-                        <div id="seat4" class="seat"><div class="seat-info-text">4</div></div>
-                        <div id="seat5" class="seat"><div class="seat-info-text">5</div></div>
-                        <div id="seat6" class="seat"><div class="seat-info-text">6</div></div>
-
+                        <button id="seat1" class="seat">
+                            <div class="seat-info-text">1</div>
+                        </button>
+                        <button id="seat2" class="seat">
+                            <div class="seat-info-text">2</div>
+                        </button>
+                        <button id="seat3" class="seat">
+                            <div class="seat-info-text">3</div>
+                        </button>
+                        <button id="seat4" class="seat">
+                            <div class="seat-info-text">4</div>
+                        </button>
+                        <button id="seat5" class="seat">
+                            <div class="seat-info-text">5</div>
+                        </button>
+                        <button id="seat6" class="seat">
+                            <div class="seat-info-text">6</div>
+                        </button>
                     </div>
                     <div class="displaySeat-JJS-container">
-                        <div id="seat7" class="seat"><div class="seat-info-text">7</div></div>
-                        <div id="seat8" class="seat"><div class="seat-info-text">8</div></div>
-                        <div id="seat9" class="seat"><div class="seat-info-text">9</div></div>
-                        <div id="seat10" class="seat"><div class="seat-info-text">10</div></div>
-                        <div id="seat11" class="seat"><div class="seat-info-text">11</div></div>
-                        <div id="seat12" class="seat"><div class="seat-info-text">12</div></div>
+                        <button id="seat7" class="seat">
+                            <div class="seat-info-text">7</div>
+                        </button>
+                        <button id="seat8" class="seat">
+                            <div class="seat-info-text">8</div>
+                        </button>
+                        <button id="seat9" class="seat">
+                            <div class="seat-info-text">9</div>
+                        </button>
+                        <button id="seat10" class="seat">
+                            <div class="seat-info-text">10</div>
+                        </button>
+                        <button id="seat11" class="seat">
+                            <div class="seat-info-text">11</div>
+                        </button>
+                        <button id="seat12" class="seat">
+                            <div class="seat-info-text">12</div>
+                        </button>
                     </div>
                 </div>
                 <div>
                     <div class="displaySeat-JJS-container2">
-                        <div id="seat13" class="seat"><div class="seat-info-text">13</div></div>
-                        <div id="seat14" class="seat"><div class="seat-info-text">14</div></div>
-                        <div id="seat15" class="seat"><div class="seat-info-text">15</div></div>
-                        <div id="seat16" class="seat"><div class="seat-info-text">16</div></div>
-                        <div id="seat17" class="seat"><div class="seat-info-text">17</div></div>
-                        <div id="seat18" class="seat"><div class="seat-info-text">18</div></div>
-                        <div id="seat19" class="seat"><div class="seat-info-text">19</div></div>
-                        <div id="seat20" class="seat"><div class="seat-info-text">20</div></div>
+                        <button id="seat13" class="seat">
+                            <div class="seat-info-text">13</div>
+                        </button>
+                        <button id="seat14" class="seat">
+                            <div class="seat-info-text">14</div>
+                        </button>
+                        <button id="seat15" class="seat">
+                            <div class="seat-info-text">15</div>
+                        </button>
+                        <button id="seat16" class="seat">
+                            <div class="seat-info-text">16</div>
+                        </button>
+                        <button id="seat17" class="seat">
+                            <div class="seat-info-text">17</div>
+                        </button>
+                        <button id="seat18" class="seat">
+                            <div class="seat-info-text">18</div>
+                        </button>
+                        <button id="seat19" class="seat">
+                            <div class="seat-info-text">19</div>
+                        </button>
+                        <button id="seat20" class="seat">
+                            <div class="seat-info-text">20</div>
+                        </button>
                     </div>
                     <div class="displaySeat-JJS-container2">
-                        <div id="seat21" class="seat"><div class="seat-info-text">21</div></div>
-                        <div id="seat22" class="seat"><div class="seat-info-text">22</div></div>
-                        <div id="seat23" class="seat"><div class="seat-info-text">23</div></div>
-                        <div id="seat24" class="seat"><div class="seat-info-text">24</div></div>
-                        <div id="seat25" class="seat"><div class="seat-info-text">25</div></div>
-                        <div id="seat26" class="seat"><div class="seat-info-text">26</div></div>
-                        <div id="seat27" class="seat"><div class="seat-info-text">27</div></div>
-                        <div id="seat28" class="seat"><div class="seat-info-text">28</div></div>
+                        <button id="seat21" class="seat">
+                            <div class="seat-info-text">21</div>
+                        </button>
+                        <button id="seat22" class="seat">
+                            <div class="seat-info-text">22</div>
+                        </button>
+                        <button id="seat23" class="seat">
+                            <div class="seat-info-text">23</div>
+                        </button>
+                        <button id="seat24" class="seat">
+                            <div class="seat-info-text">24</div>
+                        </button>
+                        <button id="seat25" class="seat">
+                            <div class="seat-info-text">25</div>
+                        </button>
+                        <button id="seat26" class="seat">
+                            <div class="seat-info-text">26</div>
+                        </button>
+                        <button id="seat27" class="seat">
+                            <div class="seat-info-text">27</div>
+                        </button>
+                        <button id="seat28" class="seat">
+                            <div class="seat-info-text">28</div>
+                        </button>
                     </div>
                 </div>
                 <div>
                     <div class="displaySeat-JJS-container">
-                        <div id="seat29" class="seat"><div class="seat-info-text">29</div></div>
-                        <div id="seat30" class="seat"><div class="seat-info-text">30</div></div>
-                        <div id="seat31" class="seat"><div class="seat-info-text">31</div></div>
-                        <div id="seat32" class="seat"><div class="seat-info-text">32</div></div>
-                        <div id="seat33" class="seat"><div class="seat-info-text">33</div></div>
-                        <div id="seat34" class="seat"><div class="seat-info-text">34</div></div>
+                        <button id="seat29" class="seat">
+                            <div class="seat-info-text">29</div>
+                        </button>
+                        <button id="seat30" class="seat">
+                            <div class="seat-info-text">30</div>
+                        </button>
+                        <button id="seat31" class="seat">
+                            <div class="seat-info-text">31</div>
+                        </button>
+                        <button id="seat32" class="seat">
+                            <div class="seat-info-text">32</div>
+                        </button>
+                        <button id="seat33" class="seat">
+                            <div class="seat-info-text">33</div>
+                        </button>
+                        <button id="seat34" class="seat">
+                            <div class="seat-info-text">34</div>
+                        </button>
                     </div>
                     <div class="displaySeat-JJS-container">
-                        <div id="seat35" class="seat"><div class="seat-info-text">35</div></div>
-                        <div id="seat36" class="seat"><div class="seat-info-text">36</div></div>
-                        <div id="seat37" class="seat"><div class="seat-info-text">37</div></div>
-                        <div id="seat38" class="seat"><div class="seat-info-text">38</div></div>
-                        <div id="seat39" class="seat"><div class="seat-info-text">39</div></div>
-                        <div id="seat40" class="seat"><div class="seat-info-text">40</div></div>
+                        <button id="seat35" class="seat">
+                            <div class="seat-info-text">35</div>
+                        </button>
+                        <button id="seat36" class="seat">
+                            <div class="seat-info-text">36</div>
+                        </button>
+                        <button id="seat37" class="seat">
+                            <div class="seat-info-text">37</div>
+                        </button>
+                        <button id="seat38" class="seat">
+                            <div class="seat-info-text">38</div>
+                        </button>
+                        <button id="seat39" class="seat">
+                            <div class="seat-info-text">39</div>
+                        </button>
+                        <button id="seat40" class="seat">
+                            <div class="seat-info-text">40</div>
+                        </button>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
-<script>
-    function submitForm() {
-        const selectLocation = document.getElementById("selectLocation");
-        const selectedValue = selectLocation.value;
-
-        if (selectedValue) {
-            window.location.href = `/servlet/displaySeat/jjs?locationID=${selectedValue}`;
-        } else {
-            alert("장소를 선택해 주세요");
-        }
-    }
-</script>
-
 </body>
 </html>

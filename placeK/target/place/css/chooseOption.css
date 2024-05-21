@@ -22,8 +22,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 60px;
-    width: 100%;
-    max-width: 232px;
     height: 303px;
 }
 
@@ -36,6 +34,8 @@ body {
     flex: none;
     border: none;
     cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .option:hover {

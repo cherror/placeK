@@ -11,8 +11,5 @@ import java.io.IOException;
 
 @WebServlet("/servlet/displaySeat/jjs")
 public class JJSServlet extends DisplaySeatServlet {
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        handleRequest(request, response);
-    }
+
 }

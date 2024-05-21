@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>자율 주행 스튜디오</title>
     <link rel="stylesheet" href="/css/displaySeat.css" />
+    <script src="/js/displaySeat.js"></script>
 </head>
 
 <body>
@@ -104,18 +105,5 @@
         </div>
     </div>
 </div>
-<script>
-    function submitForm() {
-        const selectLocation = document.getElementById("selectLocation");
-        const selectedValue = selectLocation.value;
-
-        if (selectedValue) {
-            window.location.href = `/servlet/displaySeat/jjs?locationID=${selectedValue}`;
-        } else {
-            alert("장소를 선택해 주세요");
-        }
-    }
-</script>
-
 </body>
 </html>
