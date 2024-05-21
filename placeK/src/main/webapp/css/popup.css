@@ -113,3 +113,10 @@
     width: 100%;
     padding: 10px;
 }
+
+/* 좌석 선택 시 이미 대여중인 좌석 선택 불가 */
+.disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+

@@ -18,7 +18,6 @@ public class RentedSeatServlet extends HttpServlet {
     private LocationController locationController;
     private SeatController seatController;
     public void init() throws ServletException {
-        System.out.println("RentedSeatServlet init");
         this.locationController = (LocationController) getServletContext().getAttribute("locationController");
         this.seatController = (SeatController) getServletContext().getAttribute("seatController");
         if (this.locationController == null || this.seatController == null) {
@@ -29,7 +28,7 @@ public class RentedSeatServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //location, seat number를 DisplaySeat에서 받아와야함
         Location locationInfo = locationController.getLocationInfo(1);
-        Seat seatInfo = seatController.getSeat(1, "seat5");
+        Seat seatInfo = seatController.getSeat(1, "seat1");
 
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");

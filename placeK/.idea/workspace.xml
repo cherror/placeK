@@ -10,22 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="msg">
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/RentedSeatServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Seat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/SignInServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/SignInServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/popup.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/html/modal/rentedSeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/modal/rentedSeat.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/html/signIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/signIn.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/html/signUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/signUp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/ChooseOptionServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/ChooseOptionServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/SignInServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/SignInServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/ChooseOptionServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/ChooseOptionServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/SignInServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/SignInServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/css/popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/chooseOption.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/chooseOption.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/html/modal/rentedSeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/modal/rentedSeat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/signin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +209,7 @@
       <workItem from="1716189572373" duration="9542000" />
       <workItem from="1716288801071" duration="3803000" />
       <workItem from="1716292624769" duration="7662000" />
-      <workItem from="1716305324330" duration="1852000" />
+      <workItem from="1716305324330" duration="2162000" />
     </task>
     <task id="LOCAL-00001" summary="msg">
       <option name="closed" value="true" />
