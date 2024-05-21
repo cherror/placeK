@@ -31,7 +31,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>DisplaySeatServlet</servlet-name>
-    <url-pattern>/displayseat</url-pattern>
+    <url-pattern>/displaySeat</url-pattern>
   </servlet-mapping>
 
   <servlet>

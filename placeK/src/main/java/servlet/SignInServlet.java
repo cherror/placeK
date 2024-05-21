@@ -48,7 +48,8 @@ public class SignInServlet extends HttpServlet {
             session.setAttribute("user", user);
 
             response.sendRedirect("../../html/chooseOption.html");
+        } else {
+            System.out.println("로그인 실패");
         }
-        response.getWriter().println("Sign up successful!");
     }
 }
