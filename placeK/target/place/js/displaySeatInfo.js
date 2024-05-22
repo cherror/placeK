@@ -3,8 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const confirmButton = document.getElementById('confirm-button');
     const cancelButton = document.getElementById('cancel-button');
     let selectedSeatID = null;
-    const locationID = 5;
+    const locationID = document.getElementById('locationID').value;
 
+    //DB 값 불러와서 seatNum, isRented 표시
     fetch(`/servlet/displaySeatInfo?locationID=${locationID}`)
         .then(response => response.json())
         .then(data => {
@@ -36,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 })
                 .catch(error => console.error("Error fetching seat data:", error));
-            // document.getElementById('seatNum').textContent = selectedSeatId.replace('seat', '');
             popup.style.display = 'flex';
         });
     });
