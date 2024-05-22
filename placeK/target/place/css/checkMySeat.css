@@ -26,9 +26,9 @@
 }
 
 .userImage img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 30px;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
 }
 
 .userInformation {
@@ -38,11 +38,38 @@
     align-items: center;
 }
 
-.seatInfo {
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    letter-spacing: 0.01em;
+    margin-bottom: 12px;
+}
+
+#userId {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 0.01em;
+}
+
+.my-info-content-and-data {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 10px;
 }
 
 .content {
@@ -50,5 +77,55 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 50px;
+    gap: 8vh;
+}
+
+.my-info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    gap: 15px;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+.check-button-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 7vh;
+    bottom: 5vh;
+    gap: 10px;
+}
+
+.return-button {
+    padding: 0px 16px;
+    width: 90px;
+    height: 40px;
+    background: #4d4d4d;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 확인 */
+.button-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0.1em;
+}
+
+/* Button */
+.extend-button {
+    padding: 0px 16px;
+    width: 90px;
+    height: 40px;
+    background: #4294FF;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
 }

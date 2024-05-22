@@ -107,7 +107,7 @@
     color: #FFFFFF;
 }
 
-.seat-info-bold {
+.seat-info-bold, .popup-bold {
     font-weight: bold;
     margin-right: 15px;
 }

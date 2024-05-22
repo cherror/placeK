@@ -3,37 +3,51 @@ document.addEventListener("DOMContentLoaded", function() {
     const returnPopup = document.getElementById("returnPopup");
     const returnButton = document.getElementById("returnButton");
     const cancelButton = document.getElementById("cancelButton");
+    const confirmButton = document.getElementById("confirmButton");
+    const extendButton = document.getElementById("extendButton");
 
-    returnButton.addEventListener("click", function() {
-        returnPopup.style.display = "flex";
-    });
+    if (returnButton) {
+        returnButton.addEventListener("click", function() {
+            returnPopup.style.display = "flex";
+        });
+    }
 
     // 반납하기 버튼 클릭 시
-    const confirmButton = document.getElementById("confirmButton");
-    confirmButton.addEventListener("click", function() {
-        fetch("/servlet/returnSeat")
-            .then(response => {
-                if (response.ok) {
-                    return response.json();
-                }
-                throw new Error("Failed to return seat.");
-            })
-            .then(data => {
-                // 반납이 완료되면 이동 및 알림
-                window.location.href = "/html/chooseOption.html";
-                alert("반납이 완료되었습니다.");
-            })
-            .catch(error => {
-                console.error("Error returning seat:", error);
-                // 실패할 경우 알림
-                alert("반납에 실패했습니다. 다시 시도해주세요.");
-            });
-    });
+    if (confirmButton) {
+        confirmButton.addEventListener("click", function() {
+            fetch("/servlet/returnSeat")
+                .then(response => {
+                    if (response.ok) {
+                        return response.json();
+                    }
+                    throw new Error("Failed to return seat.");
+                })
+                .then(data => {
+                    // 반납이 완료되면 이동 및 알림
+                    alert("반납이 완료되었습니다.");
+                    window.location.href = "/html/chooseOption.html";
+                })
+                .catch(error => {
+                    console.error("Error returning seat:", error);
+                    // 실패할 경우 알림
+                    alert("반납에 실패했습니다. 다시 시도해주세요.");
+                });
+        });
+    }
 
     // 취소 버튼 클릭 시
-    cancelButton.addEventListener("click", function() {
-        returnPopup.style.display = "none";
-    });
+    if (cancelButton) {
+        cancelButton.addEventListener("click", function() {
+            returnPopup.style.display = "none";
+        });
+    }
+
+    // 연장하기 버튼 클릭 시
+    if (extendButton) {
+        extendButton.addEventListener("click", function() {
+            alert("접근 가능한 서비스가 아닙니다");
+        });
+    }
 
     // 사용자 정보 불러오기
     fetch("/servlet/checkMySeat")
