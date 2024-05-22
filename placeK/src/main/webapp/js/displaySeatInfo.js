@@ -31,9 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.getElementById("seatStatus").textContent = data.isRented ? "대여 중" : "사용 가능";
 
                     if (data.isRented) {
-                        const confirmButton = document.getElementById("confirm-button");
-                        confirmButton.disabled = true;
-                        confirmButton.classList.add("disabled");
+                        confirmButton.addEventListener('click', () => {
+                            alert('이 좌석은 이미 대여 중입니다.');
+                        });
                     }
                 })
                 .catch(error => console.error("Error fetching seat data:", error));

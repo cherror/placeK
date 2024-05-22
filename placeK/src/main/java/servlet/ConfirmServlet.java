@@ -52,21 +52,21 @@ public class ConfirmServlet extends HttpServlet {
         }
         Location locationInfo = locationController.getLocationInfo(locationID);
         String availableMajor = locationInfo.getAvailableMajors();
+        System.out.println(user.isRented());
         if(locationInfo.getAvailableMajors() != null) {
-            String userMajor = userController.getUserMajor(user.getID());
-            if(availableMajor.contains(userMajor)) {
+            if(availableMajor.contains(user.getMajor()) && (!user.isRented())) {
 //                2. userDB에 해당 좌석의 정보 저장
                 userController.updateUserSeatInfo(user.getID(),  true, locationID, seatID);
 //                3. seatDB에 좌석 업데이트
                  seatController.updateSeatStatus(locationID, seatID, true);
-
+                user.setRented(true);
                 success = true;
                 jsonResponse = "{"
                         + "\"message\":\"" + "Seat rental complete" + "\""
                         + "}";
             } else {
                 jsonResponse = "{"
-                        + "\"message\":\"" + "Seat rental failure: Not applicable major" + "\""
+                        + "\"message\":\"" + "Seat rental failure" + "\""
                         + "}";
             }
         } else {
