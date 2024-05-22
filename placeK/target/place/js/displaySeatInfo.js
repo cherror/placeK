@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.seat').forEach(seat => {
         seat.addEventListener('click', (event) => {
             selectedSeatID = event.currentTarget.id;
-            fetch("/servlet/rentedSeat?seatID=" + selectedSeatID + "&locationID=" + locationID)
+            fetch("/servlet/seatDetail?seatID=" + selectedSeatID + "&locationID=" + locationID)
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById("seatLocation").textContent = data.locationName;

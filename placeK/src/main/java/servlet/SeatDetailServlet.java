@@ -2,7 +2,6 @@ package servlet;
 
 import controller.LocationController;
 import controller.SeatController;
-import controller.UserController;
 import model.Location;
 import model.Seat;
 
@@ -13,8 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 //좌석 한개 클릭 했을 때 상세정보
-@WebServlet("/servlet/rentedSeat")
-public class RentedSeatServlet extends HttpServlet {
+@WebServlet("/servlet/seatDetail")
+public class SeatDetailServlet extends HttpServlet {
     private LocationController locationController;
     private SeatController seatController;
     public void init() throws ServletException {

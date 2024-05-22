@@ -53,12 +53,12 @@
   </servlet-mapping>
 
   <servlet>
-    <servlet-name>RentedSeatServlet</servlet-name>
-    <servlet-class>servlet.RentedSeatServlet</servlet-class>
+    <servlet-name>SeatDetailServlet</servlet-name>
+    <servlet-class>servlet.SeatDetailServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>RentedSeatServlet</servlet-name>
-    <url-pattern>/rentedSeat</url-pattern>
+    <servlet-name>SeatDetailServlet</servlet-name>
+    <url-pattern>/seatDetail</url-pattern>
   </servlet-mapping>
 
   <servlet>
