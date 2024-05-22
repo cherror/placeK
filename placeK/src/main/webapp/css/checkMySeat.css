@@ -57,7 +57,7 @@
     margin-bottom: 12px;
 }
 
-#userId {
+#userID {
     font-family: 'Inter';
     font-weight: 600;
     font-size: 18px;
@@ -65,7 +65,7 @@
     letter-spacing: 0.01em;
 }
 
-.my-info-content-and-data {
+.seat-info-content-and-data {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -77,17 +77,21 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 8vh;
+    gap: 60px;
 }
 
-.my-info-content {
+.seat-info-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     position: relative;
     gap: 15px;
     letter-spacing: 0.05em;
-    font-weight: 600;
+    margin-top: 15px;
+}
+
+.seat-info-content-bold {
+    font-weight: bold;
 }
 
 .check-button-container {
