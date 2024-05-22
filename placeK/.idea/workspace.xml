@@ -11,19 +11,15 @@
   <component name="ChangeListManager">
     <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="signIn, signUP html file 생성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/DisplaySeatServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/DisplaySeatServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/KsmartLoungeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/KsmartLoungeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/checkMySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/checkMySeat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/checkMySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/checkMySeat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/KsmartLounge.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/KsmartLounge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/KsmartLounge.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/KsmartLounge.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/DisplaySeatServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/DisplaySeatServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/KsmartLoungeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/KsmartLoungeServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/DisplaySeatServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/DisplaySeatServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/KsmartLoungeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/KsmartLoungeServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/css/popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/KsmartLounge.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/KsmartLounge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/signin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/js/KsmartLounge.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/js/KsmartLounge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/business.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/business.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/law.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/law.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/mss.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/mss.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/notice/updateTimeFail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/notice/updateTimeFail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
