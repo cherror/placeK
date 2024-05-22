@@ -38,7 +38,6 @@ public class ConfirmServlet extends HttpServlet {
         User user = (User) session.getAttribute("user");
 
         int locationID;
-        boolean success = false;
         String jsonResponse;
 
         String locationIDStr = request.getParameter("locationID");
@@ -52,7 +51,7 @@ public class ConfirmServlet extends HttpServlet {
         }
         Location locationInfo = locationController.getLocationInfo(locationID);
         String availableMajor = locationInfo.getAvailableMajors();
-        System.out.println(user.isRented());
+
         if(locationInfo.getAvailableMajors() != null) {
             if(availableMajor.contains(user.getMajor()) && (!user.isRented())) {
 //                2. userDB에 해당 좌석의 정보 저장
@@ -67,21 +66,12 @@ public class ConfirmServlet extends HttpServlet {
 
                 session.setAttribute("user", user);
                 user.setRented(true);
-                success = true;
-                jsonResponse = "{"
-                        + "\"message\":\"" + "Seat rental complete" + "\""
-                        + "}";
+                response.getWriter().write("{\"status\": \"success\"}");
             } else {
-                jsonResponse = "{"
-                        + "\"message\":\"" + "Seat rental failure" + "\""
-                        + "}";
+                response.getWriter().write("{\"status\": \"failure\"}");
             }
         } else {
-            jsonResponse = "{"
-                    + "\"message\":\"" + "Seat rental failure" + "\""
-                    + "}";
+                response.getWriter().write("{\"status\": \"failure\"}");
         }
-        response.getWriter().write(jsonResponse);
-
     }
 }

@@ -10,17 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="create: logout link">
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/ReturnServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/CheckMySeatServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/CheckMySeatServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ConfirmServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ConfirmServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/checkMySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/checkMySeat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/checkMySeat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/checkMySeat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/signUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/signUp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/displaySeatInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/displaySeatInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/servlet/ConfirmServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/ConfirmServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/ConfirmServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/ConfirmServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/checkMySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/checkMySeat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/js/checkMySeat.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/js/checkMySeat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/chooseOption.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/chooseOption.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/css/chooseOption.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/css/chooseOption.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/html/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/js/displaySeatInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/js/displaySeatInfo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,12 +45,12 @@
     &quot;assignee&quot;: &quot;judyzero&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/cherror/placeK.git",
-    "accountId": "038f5691-e515-4d00-97d6-cd61c4d9c46e"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/cherror/placeK.git&quot;,
+    &quot;accountId&quot;: &quot;038f5691-e515-4d00-97d6-cd61c4d9c46e&quot;
   }
-}]]></component>
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -238,6 +236,7 @@
       <workItem from="1716356605353" duration="339000" />
       <workItem from="1716356947912" duration="9640000" />
       <workItem from="1716390865866" duration="3765000" />
+      <workItem from="1716397053740" duration="641000" />
     </task>
     <task id="LOCAL-00001" summary="msg">
       <option name="closed" value="true" />

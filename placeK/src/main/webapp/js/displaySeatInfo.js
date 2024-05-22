@@ -30,14 +30,16 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.getElementById("seatMajor").textContent = data.availableMajors;
                     document.getElementById("seatStatus").textContent = data.isRented ? "대여 중" : "사용 가능";
 
-                    if (data.isRented) {
-                        confirmButton.addEventListener('click', () => {
-                            alert('이 좌석은 이미 대여 중입니다.');
-                        });
+                    if(data.isRented){
+                        alert("해당 좌석은 사용중입니다.")
+                        //새로고침하기
+                        location.reload();
+                        popup.style.display = 'none';
+                    } else{
+                        popup.style.display = 'flex';
                     }
                 })
                 .catch(error => console.error("Error fetching seat data:", error));
-            popup.style.display = 'flex';
         });
     });
 
@@ -51,10 +53,15 @@ document.addEventListener('DOMContentLoaded', () => {
         fetch("/servlet/confirm?seatID=" + selectedSeatID + "&locationID=" + locationID)
             .then(response => response.json())
             .then(data => {
-                alert(data.message)
-                //새로고침하기
-                location.reload();
-                popup.style.display = 'none';
+                if (data.status === "success") {
+                    alert("좌석 대여가 완료되었습니다.");
+                    location.reload();
+                    popup.style.display = 'none';
+                } else {
+                    alert("좌석 대여에 실패했습니다.");
+                    location.reload();
+                    popup.style.display = 'none';
+                }
             })
             .catch(error => console.error('Error renting seat:', error));
     });
