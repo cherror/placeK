@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign In Page</title>
     <link rel="stylesheet" href="../css/sign.css" />
+    <script defer src="../js/signin.js"></script>
 </head>
 
 <body>
@@ -16,8 +17,7 @@
         <div class="sign-subtitle">
             국민대학교 스터디룸 자리 배정 시스템
         </div>
-        <form class="sign-form" method="post" action="/servlet/signIn">
-        <form class="sign-form">
+        <form class="sign-form" id="sign-in-form" method="post" action="/servlet/signIn">
             <input
                     class="sign-field"
                     type="text"
@@ -43,11 +43,61 @@
                 </div>
                 <hr class="signin-divider-line2" />
             </div>
-            <button class="move-to-signup-button">
+            <button type="button" class="move-to-signup-button">
                 <span class="move-to-signup-button-text">Sign up</span>
             </button>
         </form>
     </div>
 </div>
+
+<!-- 팝업 모달 -->
+<div id="popupModal" class="popup-modal">
+    <div class="popup-content">
+        <span class="close-button">&times;</span>
+        <p id="popupMessage">Sign in successful!</p>
+    </div>
+</div>
+
+<style>
+    /* 팝업 모달 스타일 */
+    .popup-modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+        padding-top: 60px;
+    }
+
+    .popup-content {
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    .close-button {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close-button:hover,
+    .close-button:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+
 </body>
 </html>
