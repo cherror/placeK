@@ -4,6 +4,8 @@
     <option name="state">
       <map>
         <entry key="file://$PROJECT_DIR$/src/main/webapp/html/chooseOption.html" value="file://$PROJECT_DIR$/src/main/webapp/html" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" value="file://$PROJECT_DIR$/src/main/webapp/html/displaySeat" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/html/modal/rentedSeat.html" value="file://$PROJECT_DIR$/src/main/webapp/html/modal" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/html/signup.html" value="file://$PROJECT_DIR$/src/main/webapp/html" />
       </map>
     </option>

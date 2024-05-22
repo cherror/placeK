@@ -91,13 +91,21 @@
     cursor: pointer; /* 마우스 오버시 포인터로 변경 */
 }
 
-/* 공통 스타일 */
 .seat {
     width: 42px;
     height: 52px;
-    background: #d9d9d9;
     border-radius: 3px;
+    border: none;
     cursor: pointer;
+    background-color: #d9d9d9; /* 기본 색상 */
+}
+
+.seat.available {
+    background-color: green;
+}
+
+.seat.occupied {
+    background-color: red;
 }
 
 .displaySeat-JJS-Box {

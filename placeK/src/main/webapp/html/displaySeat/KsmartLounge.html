@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>K-smart Lounge</title>
-    <link rel="stylesheet" href="../../css/displaySeat.css" />
+    <link rel="stylesheet" href="/css/displaySeat.css" />
+    <link rel="stylesheet" href="/css/popup.css">
     <script src="/js/displaySeat.js"></script>
+    <script src="/js/KsmartLounge.js" defer></script>
 </head>
 
 <body>
@@ -146,6 +148,50 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+<!-- 모달 -->
+<div id="rentedSeatModal" class="popup">
+    <div class="popup-rectangle2">
+        <div class="title">선택 좌석</div>
+        <div class="content-and-data">
+            <div class="content">
+                <div class="text">
+                    <span class="bold">장 &nbsp; &nbsp; &nbsp; 소</span><span id="seatLocation"></span>
+                </div>
+                <div class="text">
+                    <span class="bold">좌석 번호</span><span id="seatNum"></span>
+                </div>
+                <div class="text">
+                    <span class="bold">이용 대상</span><span id="seatMajor"></span>
+                </div>
+                <div class="text">
+                    <span class="bold">상 &nbsp; &nbsp; &nbsp; 태</span><span id="seatStatus"></span>
+                </div>
+            </div>
+            <div class="content-data">
+                <div class="text">
+                    <span class="bold">더미1</span><span id="1"></span>
+                </div>
+                <div class="text">
+                    <span class="bold">더미2</span><span id="2"></span>
+                </div>
+                <div class="text">
+                    <span class="bold">더미3</span><span id="3"></span>
+                </div>
+                <div class="text">
+                    <span class="bold">더미4</span><span id="4"></span>
+                </div>
+            </div>
+        </div>
+        <div class="popup-button-container">
+            <button class="cancel-button" id="cancel-button">
+                <span class="text">취소</span>
+            </button>
+            <button class="confirm-button" id="confirm-button">
+                <span class="text">신청하기</span>
+            </button>
         </div>
     </div>
 </div>
