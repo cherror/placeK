@@ -1,21 +1,9 @@
-<mxfile host="app.diagrams.net" modified="2024-05-22T18:46:03.644Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="1beCup5nnB2eZAMC7tF3" version="24.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-22T19:17:11.987Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="D9c0_iQtaxoRru8m4pWh" version="24.4.6" type="github">
   <diagram name="페이지-1" id="pBuifLQtF7rdROxbTCVa">
-    <mxGraphModel dx="4412" dy="2997" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3694" dy="2211" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="w3o1ovv0QM6Y8DACqGBJ-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="w3o1ovv0QM6Y8DACqGBJ-30" target="w3o1ovv0QM6Y8DACqGBJ-29" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="380" y="220" as="sourcePoint" />
-            <mxPoint x="410" y="510" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="w3o1ovv0QM6Y8DACqGBJ-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="w3o1ovv0QM6Y8DACqGBJ-31" target="w3o1ovv0QM6Y8DACqGBJ-29" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="630" y="330.0000000000002" as="sourcePoint" />
-            <mxPoint x="410" y="510" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="w3o1ovv0QM6Y8DACqGBJ-9" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="w3o1ovv0QM6Y8DACqGBJ-29" target="w3o1ovv0QM6Y8DACqGBJ-15" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="640" as="sourcePoint" />
@@ -29,22 +17,16 @@
           <mxGeometry x="250" y="530" width="340" height="110" as="geometry" />
         </mxCell>
         <mxCell id="w3o1ovv0QM6Y8DACqGBJ-30" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;SignInServlet&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;- userController : UserController&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ init() : void&lt;br&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;# doPost(request: HttpServletRequest,&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;response: HttpServletResponse) : void&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;div style=&quot;padding: 0px; margin: 0px;&quot;&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="660" y="55" width="230" height="110" as="geometry" />
+          <mxGeometry x="-120" y="-230" width="230" height="110" as="geometry" />
         </mxCell>
         <mxCell id="w3o1ovv0QM6Y8DACqGBJ-31" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;SignUpServlet&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;- userController : UserController&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ init() : void&lt;br&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;# doPost(request: HttpServletRequest,&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;response: HttpServletResponse) : void&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;div style=&quot;padding: 0px; margin: 0px;&quot;&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="400" y="180" width="230" height="110" as="geometry" />
+          <mxGeometry x="530" y="-230" width="230" height="110" as="geometry" />
         </mxCell>
         <mxCell id="w3o1ovv0QM6Y8DACqGBJ-33" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;LocationController&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;+ getLocationInfo(locationID: int): Location&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-610" y="535" width="340" height="50" as="geometry" />
         </mxCell>
         <mxCell id="w3o1ovv0QM6Y8DACqGBJ-35" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;SeatController&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&amp;nbsp;+ getSeatsInfo(locationID: int): List&amp;lt;Seat&amp;gt;&lt;br&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;+ getSeat(locationID: int, seatNum: String): Seat&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;+ updateSeatStatus(locationID: int, seatNum: String, isRented: boolean): void&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-195" y="530" width="340" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="w3o1ovv0QM6Y8DACqGBJ-36" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="w3o1ovv0QM6Y8DACqGBJ-32" target="w3o1ovv0QM6Y8DACqGBJ-35" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-50" y="580" as="sourcePoint" />
-            <mxPoint y="530" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="w3o1ovv0QM6Y8DACqGBJ-37" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Seat&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;+ seatNum: String&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;+ isRented: boolean&lt;br&gt;+ locationID:int&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ rentTime: string&lt;br&gt;+ rentedBy: string&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setSeatNum(seatNum: String): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getSeatNum(): String&lt;br&gt;+ setLocationID(locationID: int): void&lt;br&gt;+ getLocationID(): String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getIsRented(): boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getRentTime(): String&lt;br&gt;+ getSeatNumber(): String&lt;/p&gt;&lt;div style=&quot;padding: 0px; margin: 0px;&quot;&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-140" y="680" width="230" height="220" as="geometry" />
@@ -65,70 +47,172 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="w3o1ovv0QM6Y8DACqGBJ-46" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;DisplaySeatInfoServlet&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap; background-color: initial;&quot;&gt;- seatController: SeatController&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ init() : void&lt;br&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;# doGet(request: HttpServletRequest,&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;response: HttpServletResponse) : void&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;div style=&quot;padding: 0px; margin: 0px;&quot;&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="130" y="140" width="220" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="w3o1ovv0QM6Y8DACqGBJ-48" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="w3o1ovv0QM6Y8DACqGBJ-46" target="w3o1ovv0QM6Y8DACqGBJ-35" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-510" y="450" as="sourcePoint" />
-            <mxPoint x="-460" y="400" as="targetPoint" />
-          </mxGeometry>
+          <mxGeometry x="-90" y="110" width="220" height="120" as="geometry" />
         </mxCell>
         <mxCell id="w3o1ovv0QM6Y8DACqGBJ-49" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ChooseOptionServlet&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;# doPost&lt;/span&gt;&lt;span style=&quot;text-wrap: nowrap; background-color: initial;&quot;&gt;(request: HttpServletRequest,&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;response: HttpServletResponse): void&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;# doGet(request: HttpServletRequest,&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;response: HttpServletResponse) : void&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;div style=&quot;padding: 0px; margin: 0px;&quot;&gt;&lt;br style=&quot;text-wrap: nowrap; padding: 0px; margin: 0px;&quot;&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="-740" y="-620" width="220" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="w3o1ovv0QM6Y8DACqGBJ-52" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CheckMySeatServlet&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;# doGet(request: HttpServletRequest,&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;response: HttpServletResponse) : void&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;div style=&quot;padding: 0px; margin: 0px;&quot;&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="660" y="410" width="230" height="90" as="geometry" />
+        <mxCell id="IB7x5eppCp0inpmoc1d5-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ReturnServlet&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap; background-color: initial;&quot;&gt;- userController: UserController&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;- seatController: SeatController&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ init() : void&lt;br&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;# doGet(request: HttpServletRequest,&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;response: HttpServletResponse) : void&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;div style=&quot;padding: 0px; margin: 0px;&quot;&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="260" y="150" width="230" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="C92wcG1_-lQ9yn2tJbKZ-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="w3o1ovv0QM6Y8DACqGBJ-32" edge="1" target="w3o1ovv0QM6Y8DACqGBJ-33">
+        <mxCell id="w3o1ovv0QM6Y8DACqGBJ-32" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;SeatDeatilServlet&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;- locationController: LocationController&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;- seatController: SeatController&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ init() : void&lt;br&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;# doGet(request: HttpServletRequest,&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;response: HttpServletResponse) : void&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;div style=&quot;padding: 0px; margin: 0px;&quot;&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-340" width="230" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="IB7x5eppCp0inpmoc1d5-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ConfirmServlet&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;- locationController: LocationController&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;- userController: UserController&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;- seatController: SeatController&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ init() : void&lt;br&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;# doGet(request: HttpServletRequest,&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;response: HttpServletResponse) : void&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;div style=&quot;padding: 0px; margin: 0px;&quot;&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-340" y="220" width="230" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CheckMySeatServlet&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;# doGet(request: HttpServletRequest,&lt;/span&gt;&lt;br style=&quot;text-wrap: nowrap; padding: 0px; margin: 0px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;response: HttpServletResponse) : void&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="230" width="230" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-7" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="HFMZzNhTdZshqSw1DFBM-6" target="HFMZzNhTdZshqSw1DFBM-6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-610" y="420" as="sourcePoint" />
-            <mxPoint x="-440" y="530" as="targetPoint" />
+            <mxPoint x="170" y="40" as="sourcePoint" />
+            <mxPoint x="220" y="-10" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="C92wcG1_-lQ9yn2tJbKZ-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="w3o1ovv0QM6Y8DACqGBJ-52" edge="1" source="w3o1ovv0QM6Y8DACqGBJ-30">
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-8" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="w3o1ovv0QM6Y8DACqGBJ-32">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="615" y="165" as="sourcePoint" />
-            <mxPoint x="790" y="320" as="targetPoint" />
+            <mxPoint x="-230" as="sourcePoint" />
+            <mxPoint x="-10" y="-120" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IB7x5eppCp0inpmoc1d5-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ConfirmServlet&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;- locationController: LocationController&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;- userController: UserController&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;- seatController: SeatController&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ init() : void&lt;br&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;# doGet(request: HttpServletRequest,&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;response: HttpServletResponse) : void&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;div style=&quot;padding: 0px; margin: 0px;&quot;&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="-140" y="30" width="230" height="135" as="geometry" />
-        </mxCell>
-        <mxCell id="IB7x5eppCp0inpmoc1d5-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IB7x5eppCp0inpmoc1d5-1" target="w3o1ovv0QM6Y8DACqGBJ-33">
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-9" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="HFMZzNhTdZshqSw1DFBM-6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-380" y="570" as="sourcePoint" />
-            <mxPoint x="-330" y="520" as="targetPoint" />
+            <mxPoint x="330" y="10" as="sourcePoint" />
+            <mxPoint x="-5" y="-120" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IB7x5eppCp0inpmoc1d5-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IB7x5eppCp0inpmoc1d5-1" target="w3o1ovv0QM6Y8DACqGBJ-35">
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-10" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="w3o1ovv0QM6Y8DACqGBJ-29" target="w3o1ovv0QM6Y8DACqGBJ-30">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-380" y="570" as="sourcePoint" />
-            <mxPoint x="-330" y="520" as="targetPoint" />
+            <mxPoint x="330" y="10" as="sourcePoint" />
+            <mxPoint x="-10" y="-120" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IB7x5eppCp0inpmoc1d5-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IB7x5eppCp0inpmoc1d5-1" target="w3o1ovv0QM6Y8DACqGBJ-29">
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-11" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="IB7x5eppCp0inpmoc1d5-5" target="HFMZzNhTdZshqSw1DFBM-6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-380" y="570" as="sourcePoint" />
-            <mxPoint x="-330" y="520" as="targetPoint" />
+            <mxPoint x="670" y="220" as="sourcePoint" />
+            <mxPoint x="330" y="90" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IB7x5eppCp0inpmoc1d5-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ReturnServlet&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap; background-color: initial;&quot;&gt;- userController: UserController&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;- seatController: SeatController&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ init() : void&lt;br&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;# doGet(request: HttpServletRequest,&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;response: HttpServletResponse) : void&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;div style=&quot;padding: 0px; margin: 0px;&quot;&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="80" y="360" width="230" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="IB7x5eppCp0inpmoc1d5-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IB7x5eppCp0inpmoc1d5-5" target="w3o1ovv0QM6Y8DACqGBJ-35">
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-12" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="IB7x5eppCp0inpmoc1d5-1" target="w3o1ovv0QM6Y8DACqGBJ-32">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-220" y="390" as="sourcePoint" />
-            <mxPoint x="-170" y="340" as="targetPoint" />
+            <mxPoint x="100" y="250" as="sourcePoint" />
+            <mxPoint x="-240" y="120" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IB7x5eppCp0inpmoc1d5-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IB7x5eppCp0inpmoc1d5-5" target="w3o1ovv0QM6Y8DACqGBJ-29">
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-13" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="w3o1ovv0QM6Y8DACqGBJ-35" target="w3o1ovv0QM6Y8DACqGBJ-46">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-220" y="390" as="sourcePoint" />
-            <mxPoint x="-170" y="340" as="targetPoint" />
+            <mxPoint x="380" y="400" as="sourcePoint" />
+            <mxPoint x="40" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="w3o1ovv0QM6Y8DACqGBJ-32" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;RentedSeatServlet&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;- locationController: LocationController&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;- seatController: SeatController&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ init() : void&lt;br&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;# doGet(request: HttpServletRequest,&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;response: HttpServletResponse) : void&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;div style=&quot;padding: 0px; margin: 0px;&quot;&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap: nowrap;&quot;&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="-330" y="360" width="230" height="120" as="geometry" />
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-14" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="w3o1ovv0QM6Y8DACqGBJ-33" target="IB7x5eppCp0inpmoc1d5-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-300" y="615" as="sourcePoint" />
+            <mxPoint x="-225" y="355" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-15" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="w3o1ovv0QM6Y8DACqGBJ-35" target="IB7x5eppCp0inpmoc1d5-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-300" y="615" as="sourcePoint" />
+            <mxPoint x="-225" y="355" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-16" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="w3o1ovv0QM6Y8DACqGBJ-35" target="IB7x5eppCp0inpmoc1d5-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="5" y="560" as="sourcePoint" />
+            <mxPoint x="80" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-17" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="w3o1ovv0QM6Y8DACqGBJ-29" target="IB7x5eppCp0inpmoc1d5-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="297.5" y="555" as="sourcePoint" />
+            <mxPoint x="372.5" y="295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-18" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="w3o1ovv0QM6Y8DACqGBJ-29" target="IB7x5eppCp0inpmoc1d5-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="25" y="580" as="sourcePoint" />
+            <mxPoint x="100" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-19" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="w3o1ovv0QM6Y8DACqGBJ-29" target="w3o1ovv0QM6Y8DACqGBJ-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="460" as="sourcePoint" />
+            <mxPoint x="555" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-21" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="HFMZzNhTdZshqSw1DFBM-22" target="IB7x5eppCp0inpmoc1d5-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-450" y="90" as="sourcePoint" />
+            <mxPoint x="-330" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-22" value="&lt;b&gt;Creator&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-550" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-23" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1.004;exitY=0.183;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="IB7x5eppCp0inpmoc1d5-5" target="HFMZzNhTdZshqSw1DFBM-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="169.33" as="sourcePoint" />
+            <mxPoint x="610" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-24" value="&lt;b&gt;Creator&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-25" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="HFMZzNhTdZshqSw1DFBM-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-680" y="600" as="sourcePoint" />
+            <mxPoint x="-610" y="570.41" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-26" value="&lt;b&gt;Controller&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-865" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-27" value="&lt;b&gt;Information Expert&lt;/b&gt;&lt;div&gt;- 장소의 정보를 알고 있어야함. Method로만 데이터를 처리한다.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-915" y="450" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-28" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="HFMZzNhTdZshqSw1DFBM-27">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-745" y="599.59" as="sourcePoint" />
+            <mxPoint x="-610" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-29" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="HFMZzNhTdZshqSw1DFBM-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-180" y="952" as="sourcePoint" />
+            <mxPoint x="-157.5" y="610.41" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-30" value="&lt;b&gt;Controller&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="950" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-31" value="&lt;b&gt;Information Expert&lt;/b&gt;&lt;div&gt;- 좌석 이용 여부를 알고 있어야 함.&lt;/div&gt;&lt;div&gt;Method로만 데이터를 처리한다.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-430" y="850" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-32" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="HFMZzNhTdZshqSw1DFBM-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-191.25" y="949.59" as="sourcePoint" />
+            <mxPoint x="-168.75" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-33" value="&lt;b&gt;Controller&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-34" value="&lt;b&gt;Information Expert&lt;/b&gt;&lt;div&gt;- 사용자의 정보와 좌석을 대여했는지 여부를 알고 있어야 함.&lt;br&gt;&lt;/div&gt;&lt;div&gt;Method로만 데이터를 처리한다.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="540" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-35" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="HFMZzNhTdZshqSw1DFBM-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="595" as="sourcePoint" />
+            <mxPoint x="766.25" y="355" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HFMZzNhTdZshqSw1DFBM-36" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" target="HFMZzNhTdZshqSw1DFBM-34">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="595" as="sourcePoint" />
+            <mxPoint x="660" y="480" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
