@@ -48,9 +48,10 @@ public class ReturnServlet extends HttpServlet {
             response.getWriter().write("{\"message\":\"Invalid locationID format.\"}");
             return;
         }
+        String seatIDStr = "seat"+seatID;
         //좌석 반납
         try {
-            seatController.updateSeatStatus(locationID, seatID, false);
+            seatController.updateSeatStatus(locationID, seatIDStr, false);
             userController.updateUserSeatInfo(user.getID(), false, -1, null);
 
             user.setRented(false);
