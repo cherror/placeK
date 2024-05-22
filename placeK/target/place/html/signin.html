@@ -8,6 +8,7 @@
 </head>
 
 <body>
+<body>
 <div class="sign-container">
     <div class="sign-box">
         <div class="sign-title">
@@ -16,7 +17,7 @@
         <div class="sign-subtitle">
             국민대학교 스터디룸 자리 배정 시스템
         </div>
-        <form class="sign-form" method="post" action="/servlet/signIn">
+        <form class="sign-form" id="sign-in-form" method="post" action="/servlet/signIn">
             <input
                     class="sign-field"
                     type="text"
@@ -42,11 +43,12 @@
                 </div>
                 <hr class="signin-divider-line2" />
             </div>
-            <button class="move-to-signup-button">
+            <button type="button" class="move-to-signup-button">
                 <span class="move-to-signup-button-text">Sign up</span>
             </button>
         </form>
     </div>
+</div>
 </div>
 </body>
 </html>
