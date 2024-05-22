@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>배정 좌석 확인</title>
-    <link rel="stylesheet" href="../css/checkMySeat.css" />
+    <link rel="stylesheet" href="/css/checkMySeat.css" />
     <link rel="stylesheet" href="/css/popup.css">
-    <script src="/js/checkMySeat.js"></script>
+    <script src="/js/checkMySeat.js" defer></script>
 </head>
 
 <body>
@@ -17,32 +17,50 @@
                 <div class="userImage">
                     <img src="/img/user.png" alt="User Image" />
                 </div>
-                <div class="userInfo">
-                    <div class="title">My profile</div>
-                    <div class="userID" id="userID"></div>
-                    <div class="userMajor" id="major"></div>
+                <div class="user-info">
+                    <div class="title">My Profile</div>
+                    <span id="userID">20213094</span>
+                    <span id="major">computer science</span>
                 </div>
             </div>
-            <div class="seatInfo">
-                <div class="title">My seat Infomation</div>
-                <div class="location" id="location"></div>
-                <div class="seatNumber" id="seatNum"></div>
-                <div class="rentedTime" id="rentedTime"></div>
+            <div class="my-info-content-and-data">
+                <div class="title">My Seat Infomation</div>
+                <div>
+                    <div class="my-info-content">
+                        Location<span id="location"></span>
+                    </div>
+                    <div class="my-info-content">
+                        Seat Number<span id="seatNum"></span>
+                    </div>
+                    <div class="my-info-content">
+                        Check-in Time<span id="rentedTime"></span>
+                    </div>
+                    <div class="my-info-content">
+                        Remaining Time<span id="remainTime"></span>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="check-button-container">
+            <button class="extend-button" id="extendButton">
+                <span class="button-text">연장하기</span>
+            </button>
+            <button class="return-button" id="returnButton">
+                <span class="button-text">반납하기</span>
+            </button>
         </div>
     </div>
 </div>
-<-- 반납 모달 -->
-<div class="popup">
-    <div class="rectangle">
+<div class="popup" id="returnPopup">
+    <div class="popup-rectangle">
         <div class="title">
-            <span class="bold">반납</span>하시겠습니까?
+            <span class="popup-bold">반납</span>하시겠습니까?
         </div>
-        <div class="button-container">
-            <button class="cancel-button">
+        <div class="popup-button-container">
+            <button class="cancel-button" id="cancelButton">
                 <span class="text">취소</span>
             </button>
-            <button class="confirm-button">
+            <button class="confirm-button" id="confirmButton">
                 <span class="text">반납하기</span>
             </button>
         </div>
