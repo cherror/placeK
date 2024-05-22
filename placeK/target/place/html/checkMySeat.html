@@ -29,27 +29,7 @@
             </div>
         </div>
     </div>
+    <a href="/html/signIn.html" class="logout-link">Logout</a>
 </div>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        fetch("/servlet/checkMySeat")
-            .then(response => response.json())
-            .then(user => {
-                if (user) {
-                    document.getElementById("userID").textContent = `ID: ${user.userID}`;
-                    document.getElementById("major").textContent = `Major: ${user.major}`;
-                    document.getElementById("location").textContent = `Location: ${user.location}`;
-                    document.getElementById("seatNum").textContent = `Seat Number: ${user.seatNum}`;
-                    document.getElementById("rentedTime").textContent = `Check-in time: ${user.rentedTime}`;
-                } else {
-                    document.getElementById("welcomeMessage").textContent = "No user is logged in.";
-                }
-            })
-            .catch(error => {
-                console.error("Error fetching user session:", error);
-                document.getElementById("welcomeMessage").textContent = "Error loading user information.";
-            });
-    });
-</script>
 </body>
 </html>

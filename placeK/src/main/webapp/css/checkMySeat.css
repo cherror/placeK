@@ -52,18 +52,3 @@
     align-items: center;
     gap: 50px;
 }
-
-.logout-link {
-    position: fixed;
-    width: 89px;
-    height: 24px;
-    right: 20px;
-    bottom: 20px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    color: #828282;
-}
