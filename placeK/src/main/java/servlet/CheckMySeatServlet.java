@@ -17,7 +17,7 @@ public class CheckMySeatServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
-
+        System.out.println("user: " + user);
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
         String locationName;
@@ -40,7 +40,8 @@ public class CheckMySeatServlet extends HttpServlet {
                     + "\"location\":\"" + locationName + "\","
                     + "\"seatNum\":\"" + user.getSeatNumber() + "\","
                     + "\"rentedTime\":\"" + user.getRentedTime() + "\","
-                    + "\"major\":\"" + user.getMajor() + "\""
+                    + "\"major\":\"" + user.getMajor() + "\","
+                    + "\"locationID\":\"" + user.getLocationID() + "\""
                     + "}";
             response.getWriter().write(userJson);
             System.out.println(userJson);

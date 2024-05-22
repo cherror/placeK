@@ -1,10 +1,34 @@
 document.addEventListener("DOMContentLoaded", function() {
+    let locationID;
+    let seatNum;
+
     // 반납 모달 열기
     const returnPopup = document.getElementById("returnPopup");
     const returnButton = document.getElementById("returnButton");
     const cancelButton = document.getElementById("cancelButton");
     const confirmButton = document.getElementById("confirmButton");
     const extendButton = document.getElementById("extendButton");
+
+    // 사용자 정보 불러오기
+    fetch("/servlet/checkMySeat")
+        .then(response => response.json())
+        .then(user => {
+            if (user) {
+                document.getElementById("userID").textContent = `ID: ${user.userID}`;
+                document.getElementById("major").textContent = `Major: ${user.major}`;
+                document.getElementById("location").textContent = `${user.location}`;
+                document.getElementById("seatNum").textContent = `${user.seatNum}`;
+                document.getElementById("rentedTime").textContent = `${user.rentedTime}`;
+
+                locationID = user.locationID;
+                seatNum = user.seatNum;
+
+            }
+        })
+        .catch(error => {
+            console.error("Error fetching user session:", error);
+            document.getElementById("welcomeMessage").textContent = "Error loading user information.";
+        });
 
     if (returnButton) {
         returnButton.addEventListener("click", function() {
@@ -15,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // 반납하기 버튼 클릭 시
     if (confirmButton) {
         confirmButton.addEventListener("click", function() {
-            fetch("/servlet/returnSeat")
+            fetch("/servlet/returnSeat?seatID="  + seatNum + "&locationID=" + locationID)
                 .then(response => {
                     if (response.ok) {
                         return response.json();
@@ -48,23 +72,4 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("접근 가능한 서비스가 아닙니다");
         });
     }
-
-    // 사용자 정보 불러오기
-    fetch("/servlet/checkMySeat")
-        .then(response => response.json())
-        .then(user => {
-            if (user) {
-                document.getElementById("userID").textContent = `ID: ${user.userID}`;
-                document.getElementById("major").textContent = `Major: ${user.major}`;
-                document.getElementById("location").textContent = `Location: ${user.location}`;
-                document.getElementById("seatNum").textContent = `Seat Number: ${user.seatNum}`;
-                document.getElementById("rentedTime").textContent = `Check-in time: ${user.rentedTime}`;
-            } else {
-                document.getElementById("welcomeMessage").textContent = "No user is logged in.";
-            }
-        })
-        .catch(error => {
-            console.error("Error fetching user session:", error);
-            document.getElementById("welcomeMessage").textContent = "Error loading user information.";
-        });
 });

@@ -58,7 +58,14 @@ public class ConfirmServlet extends HttpServlet {
 //                2. userDB에 해당 좌석의 정보 저장
                 userController.updateUserSeatInfo(user.getID(),  true, locationID, seatID);
 //                3. seatDB에 좌석 업데이트
-                 seatController.updateSeatStatus(locationID, seatID, true);
+                seatController.updateSeatStatus(locationID, seatID, true);
+
+                user.setRented(true);
+                user.setLocationID(locationID);
+                user.setSeatNum(seatID);
+                session.setAttribute("user", user);
+
+                session.setAttribute("user", user);
                 user.setRented(true);
                 success = true;
                 jsonResponse = "{"
