@@ -381,3 +381,12 @@
     text-align: center;
     color: #828282;
 }
+
+.move-to-before {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}

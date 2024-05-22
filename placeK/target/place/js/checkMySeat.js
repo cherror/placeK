@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const cancelButton = document.getElementById("cancelButton");
     const confirmButton = document.getElementById("confirmButton");
     const extendButton = document.getElementById("extendButton");
+    const beforePageBtn = document.getElementById("beforePageBtn");
 
     // 사용자 정보 불러오기
     fetch("/servlet/checkMySeat")
@@ -70,6 +71,13 @@ document.addEventListener("DOMContentLoaded", function() {
     if (extendButton) {
         extendButton.addEventListener("click", function() {
             alert("접근 가능한 서비스가 아닙니다");
+        });
+    }
+
+    // 이전 페이지 버튼 클릭 시
+    if (beforePageBtn) {
+        beforePageBtn.addEventListener("click", function() {
+            window.location.href = "/html/chooseOption.html";
         });
     }
 });

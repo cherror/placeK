@@ -20,6 +20,7 @@
       <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/ConfirmServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/ConfirmServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/html/checkMySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/checkMySeat.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/js/checkMySeat.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/js/checkMySeat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/chooseOption.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/chooseOption.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +94,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/img" />
+    </key>
+  </component>
   <component name="RunManager" selected="Tomcat 서버.Tomcat 9.0.89">
     <configuration name="checkMySeat.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/placeK/placeK/src/main/webapp/html/checkMySeat.html" useBuiltInWebServerPort="true">
       <method v="2" />
