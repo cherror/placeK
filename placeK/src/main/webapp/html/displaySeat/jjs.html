@@ -136,5 +136,15 @@
         </div>
     </div>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch("/servlet/displaySeat/jjs")
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+            })
+            .catch(error => console.error("Error fetching data:", error));
+    });
+</script>
 </body>
 </html>

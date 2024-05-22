@@ -31,11 +31,11 @@ public class DisplaySeatServlet extends HttpServlet {
     protected String getLocationUrl(int locationID) {
         switch (locationID) {
             case 1:
-                return "/html/displaySeat/jjs.html";
+                return "/servlet/displaySeat/jjs";
             case 2:
-                return "/html/displaySeat/mss.html";
+                return "/servlet/displaySeat/mms";
             case 3:
-                return "/html/displaySeat/KsmartLounge.html";
+                return "/servlet/displaySeat/KsmartLounge";
             case 4:
                 return "/html/displaySeat/business.html";
             case 5:
