@@ -26,9 +26,19 @@ public class RentedSeatServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        //location, seat number를 DisplaySeat에서 받아와야함
-        Location locationInfo = locationController.getLocationInfo(1);
-        Seat seatInfo = seatController.getSeat(1, "seat1");
+        int locationID;
+        String locationIDStr = request.getParameter("locationID");
+        String seatID = request.getParameter("seatID");
+
+        try {
+            locationID = Integer.parseInt(locationIDStr);
+        } catch (NumberFormatException e) {
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            return;
+        }
+
+        Location locationInfo = locationController.getLocationInfo(locationID);
+        Seat seatInfo = seatController.getSeat(locationID, seatID);
 
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
@@ -39,7 +49,6 @@ public class RentedSeatServlet extends HttpServlet {
                 + "\"availableMajors\":\"" + locationInfo.getAvailableMajors() + "\","
                 + "\"isRented\":" + seatInfo.getIsRented()
                 + "}";
-
         response.getWriter().write(jsonResponse);
     }
 }

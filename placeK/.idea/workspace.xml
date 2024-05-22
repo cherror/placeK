@@ -11,17 +11,17 @@
   <component name="ChangeListManager">
     <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="signIn, signUP html file 생성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/DisplaySeatServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/DisplaySeatServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/JJSServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/JJSServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/displaySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/displaySeat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/RentedSeatServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/RentedSeatServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/modal/rentedSeat.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/jjs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/DisplaySeatServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/DisplaySeatServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/servlet/JJSServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/JJSServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/DisplaySeatServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/DisplaySeatServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/RentedSeatServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/RentedSeatServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/JJSServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/JJSServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/RentedSeatServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/RentedSeatServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/css/displaySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/css/displaySeat.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/jjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/jjs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/html/modal/rentedSeat.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/js/jjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/js/jjs.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -196,8 +196,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript 디버그.jjs.html" />
         <item itemvalue="JavaScript 디버그.rentedSeat.html" />
+        <item itemvalue="JavaScript 디버그.jjs.html" />
         <item itemvalue="JavaScript 디버그.checkMySeat.html" />
       </list>
     </recent_temporary>
@@ -226,7 +226,7 @@
       <workItem from="1716341877308" duration="798000" />
       <workItem from="1716345449916" duration="549000" />
       <workItem from="1716356605353" duration="339000" />
-      <workItem from="1716356947912" duration="5222000" />
+      <workItem from="1716356947912" duration="9640000" />
     </task>
     <task id="LOCAL-00001" summary="msg">
       <option name="closed" value="true" />

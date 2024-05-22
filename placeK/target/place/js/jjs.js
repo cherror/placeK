@@ -1,8 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const popup = document.getElementById('rentedSeatModal');
+    const confirmButton = document.getElementById('confirm-button');
+    const cancelButton = document.getElementById('cancel-button');
+    let selectedSeatId = null;
+    const locationID = 1;
+    //DB 값 불러와서 seatNum, isRented 표시
     fetch('/servlet/displaySeat/jjs')
         .then(response => response.json())
         .then(data => {
-            console.log('Received data from server:', data);
             data.forEach(seat => {
                 const seatID = `seat${seat.seatNum}`;
                 const seatElement = document.getElementById(seatID);
@@ -12,16 +17,26 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Error fetching seat data:', error));
 
-    const popup = document.getElementById('rentedSeatModal');
-    const confirmButton = document.getElementById('confirm-button');
-    const cancelButton = document.getElementById('cancel-button');
-    let selectedSeatId = null;
-
     // 좌석 클릭 이벤트
     document.querySelectorAll('.seat').forEach(seat => {
         seat.addEventListener('click', (event) => {
-            selectedSeatId = event.currentTarget.id;
-            document.getElementById('seatNum').textContent = selectedSeatId.replace('seat', '');
+            selectedSeatID = event.currentTarget.id;
+            fetch("/servlet/rentedSeat?seatID=" + selectedSeatID + "&locationID=" + locationID)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("seatLocation").textContent = data.locationName;
+                    document.getElementById("seatNum").textContent = data.seatNum;
+                    document.getElementById("seatMajor").textContent = data.availableMajors;
+                    document.getElementById("seatStatus").textContent = data.isRented ? "대여 중" : "사용 가능";
+
+                    if (data.isRented) {
+                        const confirmButton = document.getElementById("confirm-button");
+                        confirmButton.disabled = true;
+                        confirmButton.classList.add("disabled");
+                    }
+                })
+                .catch(error => console.error("Error fetching seat data:", error));
+            // document.getElementById('seatNum').textContent = selectedSeatId.replace('seat', '');
             popup.style.display = 'flex';
         });
     });

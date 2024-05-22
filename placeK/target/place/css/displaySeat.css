@@ -101,11 +101,11 @@
 }
 
 .seat.available {
-    background-color: green !important;
+    background-color: green;
 }
 
 .seat.occupied {
-    background-color: red !important;
+    background-color: red;
 }
 
 .displaySeat-JJS-Box {
