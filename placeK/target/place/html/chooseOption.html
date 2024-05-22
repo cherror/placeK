@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Choose an Option</title>
   <link rel="stylesheet" href="../css/chooseOption.css" />
+  <script defer src="/js/chooseOption.js"></script>
 </head>
 
 <body>
@@ -12,7 +13,7 @@
   <div class="choose-box">
     <div class="title">Which service would you want?</div>
     <div class="option-container">
-      <button class="option" id="displaySeatBtn">
+      <button class="option" id="selectSeatBtn">
         <div class="option-content">
           <img src="/img/chair-icon.png" alt="option1" />
           <span>Select a Seat</span>
@@ -26,29 +27,7 @@
       </button>
     </div>
   </div>
-  <a href="signIn.html" class="logout-link">Logout</a>
+  <a href="/html/signIn.html" class="logout-link">Logout</a>
 </div>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("displaySeatBtn").addEventListener("click", function() {
-      window.location.href = "displaySeat.html";  // 또는 절대 경로로 변경 가능
-    });
-
-    document.getElementById("checkMySeatBtn").addEventListener("click", function() {
-      fetch("/servlet/chooseOption")
-              .then(response => response.json())
-              .then(user => {
-                if (user.isRented === false) {
-                  //좌석 선택 후 이용 가능 경고문 띄우기
-                } else {
-                  window.location.href = "checkMySeat.html";
-                }
-              })
-              .catch(error => console.error("Error fetching user session:", error));
-    });
-  });
-</script>
 </body>
 </html>
-
-<script src="js/script.js"></script>
