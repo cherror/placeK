@@ -7,6 +7,7 @@ import com.mongodb.client.MongoCollection;
 import org.bson.Document;
 import model.User;
 
+import javax.servlet.http.HttpSession;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;

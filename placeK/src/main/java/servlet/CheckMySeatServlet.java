@@ -17,7 +17,6 @@ public class CheckMySeatServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
-        System.out.println("user: " + user);
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
         String locationName;

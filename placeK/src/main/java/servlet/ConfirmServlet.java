@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 //좌석 신청하기
 @WebServlet("/servlet/confirm")
@@ -62,10 +64,13 @@ public class ConfirmServlet extends HttpServlet {
                 user.setRented(true);
                 user.setLocationID(locationID);
                 user.setSeatNum(seatID);
-                session.setAttribute("user", user);
+
+                LocalTime now = LocalTime.now();
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH시 mm분");
+                String formatedNow = now.format(formatter);
+                user.setRentedTime(formatedNow);
 
                 session.setAttribute("user", user);
-                user.setRented(true);
                 response.getWriter().write("{\"status\": \"success\"}");
             } else {
                 response.getWriter().write("{\"status\": \"failure\"}");
