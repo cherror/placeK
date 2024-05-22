@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const confirmButton = document.getElementById('confirm-button');
     const cancelButton = document.getElementById('cancel-button');
     let selectedSeatId = null;
-    const locationID = 1;
+    const locationID = 2;
 
-    fetch('/servlet/displaySeat/mss')
+    fetch(`/servlet/displaySeatInfo?locationID=${locationID}`)
         .then(response => response.json())
         .then(data => {
             data.forEach(seat => {

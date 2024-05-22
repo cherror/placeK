@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const locationID = 4;
 
     //DB 값 불러와서 seatNum, isRented 표시
-    fetch('/servlet/displaySeat/business')
+    fetch(`/servlet/displaySeatInfo?locationID=${locationID}`)
         .then(response => response.json())
         .then(data => {
             data.forEach(seat => {

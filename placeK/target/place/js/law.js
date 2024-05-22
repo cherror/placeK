@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let selectedSeatID = null;
     const locationID = 5;
 
-    fetch('/servlet/displaySeat/law')
+    fetch(`/servlet/displaySeatInfo?locationID=${locationID}`)
         .then(response => response.json())
         .then(data => {
             data.forEach(seat => {

@@ -35,33 +35,6 @@
   </servlet-mapping>
 
   <servlet>
-    <servlet-name>JJSServlet</servlet-name>
-    <servlet-class>servlet.JJSServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>JJSServlet</servlet-name>
-    <url-pattern>/displaySeat/jjs</url-pattern>
-  </servlet-mapping>
-
-  <servlet>
-    <servlet-name>MSSServlet</servlet-name>
-    <servlet-class>servlet.MSSServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>MSSServlet</servlet-name>
-    <url-pattern>/displaySeat/mss</url-pattern>
-  </servlet-mapping>
-
-  <servlet>
-    <servlet-name>KsmartLoungeServlet</servlet-name>
-    <servlet-class>servlet.KsmartLoungeServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>KsmartLoungeServlet</servlet-name>
-    <url-pattern>/displaySeat/KsmartLounge</url-pattern>
-  </servlet-mapping>
-
-  <servlet>
     <servlet-name>CheckMySeatServlet</servlet-name>
     <servlet-class>servlet.CheckMySeatServlet</servlet-class>
   </servlet>
@@ -86,6 +59,15 @@
   <servlet-mapping>
     <servlet-name>RentedSeatServlet</servlet-name>
     <url-pattern>/rentedSeat</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DisplaySeatInfoServlet</servlet-name>
+    <servlet-class>servlet.DisplaySeatInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplaySeatInfoServlet</servlet-name>
+    <url-pattern>/displaySeatInfo</url-pattern>
   </servlet-mapping>
 
   <listener>

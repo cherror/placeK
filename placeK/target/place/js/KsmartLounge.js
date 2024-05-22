@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const confirmButton = document.getElementById('confirm-button');
     const cancelButton = document.getElementById('cancel-button');
     let selectedSeatId = null;
-    const locationID = 3
+    const locationID = 3;
     //DB 값 불러와서 seatNum, isRented 표시
-    fetch('/servlet/displaySeat/KsmartLounge')
+    fetch(`/servlet/displaySeatInfo?locationID=${locationID}`)
         .then(response => response.json())
         .then(data => {
             data.forEach(seat => {

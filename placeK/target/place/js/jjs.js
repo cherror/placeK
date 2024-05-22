@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const popup = document.getElementById('rentedSeatModal');
     const confirmButton = document.getElementById('confirm-button');
     const cancelButton = document.getElementById('cancel-button');
-    let selectedSeatId = null;
+    let selectedSeatID = null;
     const locationID = 1;
     //DB 값 불러와서 seatNum, isRented 표시
-    fetch('/servlet/displaySeat/jjs')
+    fetch(`/servlet/displaySeatInfo?locationID=${locationID}`)
         .then(response => response.json())
         .then(data => {
             data.forEach(seat => {
@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Confirm 버튼 클릭 이벤트
     confirmButton.addEventListener('click', () => {
-        const locationId = document.getElementById('selectLocation').value;
-        console.log(`Location ID: ${locationId}, Seat ID: ${selectedSeatID}`);
+        const locationID = document.getElementById('selectLocation').value;
+        console.log(`Location ID: ${locationID}, Seat ID: ${selectedSeatID}`);
         popup.style.display = 'none';
     });
 

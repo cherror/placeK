@@ -1,6 +1,6 @@
 package servlet;
 
-import controller.*;
+import controller.SeatController;
 import model.Seat;
 
 import javax.servlet.ServletException;
@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/servlet/displaySeat/law")
-public class LawServlet extends DisplaySeatServlet {
+@WebServlet("/servlet/displaySeatInfo")
+public class DisplaySeatInfoServlet extends HttpServlet {
     private SeatController seatController;
     @Override
     public void init() throws ServletException {
@@ -24,7 +24,10 @@ public class LawServlet extends DisplaySeatServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<Seat> seatList = seatController.getSeatsInfo(5);
+        String locationIDStr = request.getParameter("locationID");
+        int locationID = Integer.parseInt(locationIDStr);
+
+        List<Seat> seatList = seatController.getSeatsInfo(locationID);
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
 
