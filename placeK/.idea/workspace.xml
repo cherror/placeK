@@ -10,9 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="signIn, signUP html file 생성">
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/MSSServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/MSSServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/mss.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/mss.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/mss.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/mss.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/signIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/signIn.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +185,12 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JavaScript 디버그.checkMySeat.html" />
+      <item itemvalue="JavaScript 디버그.jjs.html" />
+      <item itemvalue="JavaScript 디버그.rentedSeat.html" />
+      <item itemvalue="Tomcat 서버.Tomcat 9.0.89" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript 디버그.rentedSeat.html" />
@@ -217,7 +224,6 @@
       <workItem from="1716345449916" duration="549000" />
       <workItem from="1716356605353" duration="339000" />
       <workItem from="1716356947912" duration="9640000" />
-      <workItem from="1716367800841" duration="433000" />
     </task>
     <task id="LOCAL-00001" summary="msg">
       <option name="closed" value="true" />
