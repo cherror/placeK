@@ -35,7 +35,7 @@ public class DisplaySeatServlet extends HttpServlet {
             case 2:
                 return "/html/displaySeat/mss.html";
             case 3:
-                return "/servlet/displaySeat/KsmartLounge";
+                return "/html/displaySeat/KsmartLounge.html";
             case 4:
                 return "/html/displaySeat/business.html";
             case 5:
