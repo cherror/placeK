@@ -10,44 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="signIn, signUP html file 생성">
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ChooseOptionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ChooseOptionServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/DisplaySeatServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/DisplaySeatServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/JJSServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/JJSServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/MSSServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/MSSServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/SignUpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/SignUpServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/chooseOption.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/chooseOption.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/displaySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/displaySeat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/KsmartLounge.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/KsmartLounge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/business.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/business.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/law.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/law.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/mss.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/mss.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/ChooseOptionServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/ChooseOptionServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/DisplaySeatServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/DisplaySeatServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/JJSServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/JJSServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/MSSServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/MSSServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/SignupServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/ChooseOptionServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/ChooseOptionServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/DisplaySeatServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/DisplaySeatServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/JJSServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/JJSServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/MSSServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/MSSServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/SignupServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/css/chooseOption.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/css/chooseOption.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/css/displaySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/css/displaySeat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/css/popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/KsmartLounge.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/KsmartLounge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/business.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/business.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/jjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/jjs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/law.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/law.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/mss.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/mss.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/js/script.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/SingUpServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +71,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat 서버.Tomcat 9.0.89.executor": "Run",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "backend 병합 중",
+    "git-widget-placeholder": "backend",
     "kotlin-language-version-configured": "true",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
