@@ -1,0 +1,16 @@
+<mxfile host="app.diagrams.net" modified="2024-05-22T16:18:00.732Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="jZgKQAfQIeqgVZA2x5NP" version="24.2.2" type="github">
+  <diagram name="페이지-1" id="pBuifLQtF7rdROxbTCVa">
+    <mxGraphModel dx="1224" dy="680" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6CEw_GWxifUlUUtiViGe-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="320" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6CEw_GWxifUlUUtiViGe-2" value="집 가고 싶다..." style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="414" y="240" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
