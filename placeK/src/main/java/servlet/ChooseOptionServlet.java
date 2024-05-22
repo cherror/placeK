@@ -33,13 +33,11 @@ public class ChooseOptionServlet extends HttpServlet {
 
         if (user != null) {
             String userJson = "{"
-                    + "\"isRented\":" + user.isRented()  // Add this line
+                    + "\"isRented\":" + user.isRented()
                     + "}";
             response.getWriter().write(userJson);
         } else {
             response.getWriter().write("{}");
         }
-
-        doPost(request, response);
     }
 }

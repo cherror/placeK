@@ -5,7 +5,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.25);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -26,7 +26,7 @@
 /* 좌석 배정 신청 */
 .popup .popup-rectangle2 {
     width: 350px;
-    height: 400px;
+    height: 300px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -42,11 +42,22 @@
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
-    line-height: 150%;
     display: flex;
     align-items: center;
     color: #000000;
     margin-top: 15px;
+}
+
+.seat-info-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-top: 15px;
+    letter-spacing: 0.1em;
 }
 
 .popup-button-container {
@@ -96,8 +107,9 @@
     color: #FFFFFF;
 }
 
-.bold {
+.seat-info-bold {
     font-weight: bold;
+    margin-right: 15px;
 }
 
 .popup-rectangle2 {
@@ -108,10 +120,16 @@
 .content-and-data {
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    justify-content: flex-start;
-    width: 100%;
+    justify-content: center;
     padding: 10px;
+}
+
+.seat-info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 /* 좌석 선택 시 이미 대여중인 좌석 선택 불가 */
