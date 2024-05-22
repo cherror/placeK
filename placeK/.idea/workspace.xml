@@ -11,23 +11,19 @@
   <component name="ChangeListManager">
     <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="signIn, signUP html file 생성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ChooseOptionServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ChooseOptionServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/DisplaySeatServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/DisplaySeatServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/KsmartLoungeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/KsmartLoungeServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/chooseOption.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/chooseOption.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/chooseOption.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/chooseOption.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/ChooseOptionServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/ChooseOptionServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/SignInServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/SignInServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/SignUpServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/SignUpServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/ChooseOptionServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/ChooseOptionServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/SignInServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/SignInServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/SignUpServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/SignUpServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/KsmartLounge.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/KsmartLounge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/KsmartLounge.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/KsmartLounge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/DisplaySeatServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/DisplaySeatServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/KsmartLoungeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/KsmartLoungeServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/DisplaySeatServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/DisplaySeatServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/KsmartLoungeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/KsmartLoungeServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/css/popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/chooseOption.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/chooseOption.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/jjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/jjs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/KsmartLounge.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/KsmartLounge.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/html/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/signin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/js/chooseOption.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/js/chooseOption.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/js/KsmartLounge.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/js/KsmartLounge.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,11 +33,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="Jsp File" />
         <option value="Class" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -54,12 +50,14 @@
     &quot;assignee&quot;: &quot;judyzero&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/cherror/placeK.git&quot;,
-    &quot;accountId&quot;: &quot;038f5691-e515-4d00-97d6-cd61c4d9c46e&quot;
-  }
-}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="4a68a9b0-8aa0-4b82-aaf9-e655bdf2a5df" />
+        <option name="url" value="https://github.com/cherror/placeK" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
