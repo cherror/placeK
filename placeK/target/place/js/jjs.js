@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Confirm 버튼 클릭 이벤트
     confirmButton.addEventListener('click', () => {
         const locationId = document.getElementById('selectLocation').value;
-        console.log(`Location ID: ${locationId}, Seat ID: ${selectedSeatId}`);
+        console.log(`Location ID: ${locationId}, Seat ID: ${selectedSeatID}`);
         popup.style.display = 'none';
     });
 

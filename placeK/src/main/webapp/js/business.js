@@ -1,50 +1,42 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 좌석 상태를 나타내는 예제 데이터 (실제로는 서버에서 받아와야 함)
-    const seatStatus = {
-        seat1: 'available',
-        seat2: 'occupied',
-        seat3: 'available',
-        seat4: 'occupied',
-        seat5: 'available',
-        seat6: 'occupied',
-        seat7: 'available',
-        seat8: 'occupied',
-        seat9: 'available',
-        seat10: 'occupied',
-        seat11: 'available',
-        seat12: 'occupied',
-        seat13: 'available',
-        seat14: 'occupied',
-        seat15: 'available',
-        seat16: 'occupied',
-        seat17: 'available',
-        seat18: 'occupied',
-        seat19: 'available',
-        seat20: 'occupied',
-        seat21: 'available',
-        seat22: 'occupied',
-        seat23: 'available',
-        seat24: 'occupied'
-    };
-
-    // 좌석 상태에 따라 색상 변경
-    for (const [seatId, status] of Object.entries(seatStatus)) {
-        const seatElement = document.getElementById(seatId);
-        if (seatElement) {
-            seatElement.classList.add(status);
-        }
-    }
-
     const popup = document.getElementById('rentedSeatModal');
     const confirmButton = document.getElementById('confirm-button');
     const cancelButton = document.getElementById('cancel-button');
-    let selectedSeatId = null;
+    let selectedSeatID = null;
+    const locationID = 4;
+
+    //DB 값 불러와서 seatNum, isRented 표시
+    fetch('/servlet/displaySeat/business')
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(seat => {
+                const seatID = `seat${seat.seatNum}`;
+                const seatElement = document.getElementById(seatID);
+                const status = seat.isRented ? 'occupied' : 'available';
+                seatElement.classList.add(status);
+            });
+        })
+        .catch(error => console.error('Error fetching seat data:', error));
 
     // 좌석 클릭 이벤트
     document.querySelectorAll('.seat').forEach(seat => {
         seat.addEventListener('click', (event) => {
-            selectedSeatId = event.currentTarget.id;
-            document.getElementById('seatNum').textContent = selectedSeatId.replace('seat', '');
+            selectedSeatID = event.currentTarget.id;
+            fetch("/servlet/rentedSeat?seatID=" + selectedSeatID + "&locationID=" + locationID)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("seatLocation").textContent = data.locationName;
+                    document.getElementById("seatNum").textContent = data.seatNum;
+                    document.getElementById("seatMajor").textContent = data.availableMajors;
+                    document.getElementById("seatStatus").textContent = data.isRented ? "대여 중" : "사용 가능";
+
+                    if (data.isRented) {
+                        const confirmButton = document.getElementById("confirm-button");
+                        confirmButton.disabled = true;
+                        confirmButton.classList.add("disabled");
+                    }
+                })
+                .catch(error => console.error("Error fetching seat data:", error));
             popup.style.display = 'flex';
         });
     });
@@ -57,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Confirm 버튼 클릭 이벤트
     confirmButton.addEventListener('click', () => {
         const locationId = document.getElementById('selectLocation').value;
-        console.log(`Location ID: ${locationId}, Seat ID: ${selectedSeatId}`);
+        console.log(`Location ID: ${locationId}, Seat ID: ${selectedSeatID}`);
         popup.style.display = 'none';
     });
 
