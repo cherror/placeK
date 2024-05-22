@@ -12,6 +12,20 @@
     <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="signIn, signUP html file 생성">
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/LawServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/LawServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/law.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/law.js" afterDir="false" />
+    <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="create: logout link">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/checkMySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/checkMySeat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/checkMySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/checkMySeat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/KsmartLounge.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/KsmartLounge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/business.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/business.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/law.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/law.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/mss.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/mss.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/signIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/signIn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/signIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/signIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/KsmartLounge.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/KsmartLounge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/jjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/jjs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/js/signIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/js/signIn.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +248,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716300110857</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="create: logout link">
+      <option name="closed" value="true" />
+      <created>1716378905663</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716378905663</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +277,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="feat: 로그인 시 DB 조회 및 세션 유저 정보 저장" />
     <MESSAGE value="msg" />
-    <option name="LAST_COMMIT_MESSAGE" value="msg" />
+    <MESSAGE value="create: logout link" />
+    <option name="LAST_COMMIT_MESSAGE" value="create: logout link" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
