@@ -14,18 +14,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/law.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/law.js" afterDir="false" />
     <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="create: logout link">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/checkMySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/checkMySeat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/checkMySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/checkMySeat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/KsmartLounge.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/KsmartLounge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/business.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/business.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/law.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/law.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/mss.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/mss.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/signIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/signIn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/signIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/signIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/KsmartLounge.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/KsmartLounge.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/jjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/jjs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/js/signIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/js/signIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/css/checkMySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/css/checkMySeat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/html/checkMySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/checkMySeat.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,12 +102,13 @@
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 9.0.89" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.89" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8082/html/signIn.html" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="placeK:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/" />
+            <option name="CONTEXT_PATH" value="/html/signIn.html" />
           </settings>
         </artifact>
       </deployment>
