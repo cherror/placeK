@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Page</title>
-    <link rel="stylesheet" href="../css/sign.css" />
+    <link rel="stylesheet" href="/css/sign.css" />
+    <link rel="stylesheet" href="/css/popup.css">
+    <script src="/js/sign.js" defer></script>
 </head>
 
 <body>
@@ -62,16 +64,22 @@
             <button type="submit" class="signup-button">
                 <span class="sign-button-text">Sign up</span>
             </button>
-<<<<<<< Updated upstream
-            <a href="/html/signin.html" class="move-to-signin">
-=======
-            <a href="/signin.html" class="move-to-signin">
->>>>>>> Stashed changes
+
+            <a href="/html/signIn.html" class="move-to-signin">
                         <span class="move-to-signin-text"
-                        >Already have an account?</span
-                        >
+                        >Already have an account?</span>
             </a>
         </form>
+    </div>
+</div>
+<div class="popup">
+    <div class="popup-rectangle">
+        <div class="title">회원가입이 완료 되었습니다</div>
+        <div class="popup-button-container">
+            <button class="confirm-button">
+                <span class="text">닫기</span>
+            </button>
+        </div>
     </div>
 </div>
 </body>
