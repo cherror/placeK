@@ -23,35 +23,35 @@ public class SignUpServlet extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // 폼 데이터 가져오기
         String userID = request.getParameter("username");
         String major = request.getParameter("major");
         String password = request.getParameter("password");
         String passwordCheck = request.getParameter("passwordCheck");
 
-        // 데이터 확인
-        if(userID.isEmpty() || major == null || password.isEmpty() || passwordCheck.isEmpty()){
-            System.out.println("빈칸을 채워주세요.");
-            return;
-        } else if(!userID.matches("\\d+")){
+        response.setContentType("application/json");
+        response.setCharacterEncoding("UTF-8");
+
+        if (userID.isEmpty() || major == null || password.isEmpty() || passwordCheck.isEmpty()) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-            response.getWriter().write("ID는 숫자로만 구성되어야 합니다.");
-            System.out.println("ID는 숫자로만 구성되어야 합니다.");
+            response.getWriter().write("{\"status\": false, \"error\": \"MISSING_FIELDS\"}");
+            return;
+        } else if (!userID.matches("\\d+")) {
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            response.getWriter().write("{\"status\": false, \"error\": \"ID_MUST_BE_NUMERIC\"}");
             return;
         } else if (!password.equals(passwordCheck)) {
-            System.out.println("비밀번호가 일치하지 않습니다.");
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            response.getWriter().write("{\"status\": false, \"error\": \"PASSWORD_MISMATCH\"}");
             return;
         } else {
             int userIDInt = Integer.parseInt(userID);
             User user = new User(userIDInt, password, major, false, -1, null, null);
             boolean isCreated = userController.createUser(user);
             if (isCreated) {
-                response.sendRedirect("../../html/signin.html");
-                System.out.println("회원가입 성공");
-                response.sendRedirect(request.getContextPath() + "/html/signIn.html");
+                response.getWriter().write("{\"status\": true}");
             } else {
-                System.out.println("회원가입 실패. 해당 ID가 존재합니다.");
-                response.sendRedirect(request.getContextPath() + "/html/signUp.html");
+                response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+                response.getWriter().write("{\"status\": false, \"error\": \"USER_ALREADY_EXISTS\"}");
             }
         }
     }
