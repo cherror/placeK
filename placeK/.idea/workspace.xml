@@ -10,15 +10,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="create: logout link">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/backward.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/checkMySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/checkMySeat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/displaySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/displaySeat.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/html/checkMySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/checkMySeat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/modal/returnPopup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/modal/returnPopup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/signUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/signUp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/KsmartLounge.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/KsmartLounge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/business.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/business.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/law.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/law.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/mss.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/mss.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/modal/returnPopup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/modal/updateTimePopup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/notice/alreadyRented.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/notice/alreadyUsed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/notice/noMatchedMajor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/notice/noSeatInfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/notice/retnedSuccess.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/notice/updateTimeFail.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/checkMySeat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/checkMySeat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/displaySeat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/displaySeat.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/css/checkMySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/css/checkMySeat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/css/popup.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/html/checkMySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/checkMySeat.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/place/js/checkMySeat.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/js/checkMySeat.js" afterDir="false" />
     </list>
@@ -96,6 +109,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/img" />
+    </key>
+  </component>
   <component name="RunManager" selected="Tomcat 서버.Tomcat 9.0.89">
     <configuration name="checkMySeat.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/placeK/placeK/src/main/webapp/html/checkMySeat.html" useBuiltInWebServerPort="true">
       <method v="2" />
