@@ -49,7 +49,16 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>MSSServlet</servlet-name>
-    <url-pattern>/mss</url-pattern>
+    <url-pattern>/displaySeat/mss</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>KsmartLoungeServlet</servlet-name>
+    <servlet-class>servlet.KsmartLoungeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>KsmartLoungeServlet</servlet-name>
+    <url-pattern>/displaySeat/KsmartLounge</url-pattern>
   </servlet-mapping>
 
   <servlet>

@@ -17,12 +17,31 @@ public class DisplaySeatServlet extends HttpServlet {
         String locationIDStr = request.getParameter("locationID");
         if (locationIDStr != null) {
             int locationID = Integer.parseInt(locationIDStr);
-            // locationID 값을 터미널에 출력
-            System.out.println("Selected Location ID: " + locationID);
-            response.getWriter().println("Selected Location ID: " + locationID);
+            String locationUrl = getLocationUrl(locationID);
+            if (locationUrl != null) {
+                response.getWriter().write(locationUrl);
+            } else {
+                response.getWriter().write("Invalid location ID: " + locationID);
+            }
         } else {
-            // locationID 값이 없는 경우 에러 메시지 출력
-            response.getWriter().println("No location ID selected.");
+            response.getWriter().write("No location ID selected.");
+        }
+    }
+
+    protected String getLocationUrl(int locationID) {
+        switch (locationID) {
+            case 1:
+                return "/html/displaySeat/jjs.html";
+            case 2:
+                return "/html/displaySeat/mss.html";
+            case 3:
+                return "/html/displaySeat/KsmartLounge.html";
+            case 4:
+                return "/html/displaySeat/business.html";
+            case 5:
+                return "/html/displaySeat/law.html";
+            default:
+                return null;
         }
     }
 }

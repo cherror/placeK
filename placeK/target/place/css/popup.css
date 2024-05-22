@@ -11,7 +11,7 @@
 }
 
 /* 일반적으로 */
-.popup .rectangle {
+.popup .popup-rectangle {
     width: 350px;
     height: 200px;
     background: #FFFFFF;
@@ -24,7 +24,7 @@
 }
 
 /* 좌석 배정 신청 */
-.popup .rectangle2 {
+.popup .popup-rectangle2 {
     width: 350px;
     height: 400px;
     background: #FFFFFF;
@@ -49,7 +49,7 @@
     margin-top: 15px;
 }
 
-.button-container {
+.popup-button-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around; /* 버튼 사이의 간격을 동일하게 유지 */
@@ -100,7 +100,7 @@
     font-weight: bold;
 }
 
-.rectangle2 {
+.popup-rectangle2 {
     display: flex;
     padding: 20px;
 }

@@ -12,6 +12,18 @@ import java.io.IOException;
 
 @WebServlet("/servlet/chooseOption")
 public class ChooseOptionServlet extends HttpServlet {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String action = request.getParameter("action");
+
+        if ("selectSeat".equals(action)) {
+            response.sendRedirect(request.getContextPath() + "/html/displaySeat.html");
+        } else if ("checkSeat".equals(action)) {
+            response.sendRedirect(request.getContextPath() + "/html/checkMySeat.html");
+        } else {
+            response.getWriter().println("Invalid action.");
+        }
+    }
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
@@ -27,5 +39,7 @@ public class ChooseOptionServlet extends HttpServlet {
         } else {
             response.getWriter().write("{}");
         }
+
+        doPost(request, response);
     }
 }
