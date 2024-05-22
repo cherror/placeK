@@ -32,23 +32,31 @@ public class SignInServlet extends HttpServlet {
         try {
             userIDInt = Integer.parseInt(userID);
         } catch (NumberFormatException e) {
-            //로그인 실패 시 모달 띄우기
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-            response.getWriter().write("ID must be an integer");
+            response.getWriter().write("{\"status\": false, \"error\": \"ID must be an integer\"}");
             return;
         }
 
         Map<String, Object> loginResult = userController.loginUser(userIDInt, password);
         if ((Boolean) loginResult.get("status")) {
-            System.out.println("로그인 성공");
-
-            //user 정보 객체에 저장
             User user = userController.getUserInfo(userIDInt);
             HttpSession session = request.getSession();
             session.setAttribute("user", user);
-            response.sendRedirect("../../html/chooseOption.html");
+            response.setContentType("application/json");
+            response.getWriter().write("{\"status\": true}");
         } else {
-            System.out.println("로그인 실패");
+            String error = (String) loginResult.get("error");
+            response.setContentType("application/json");
+            if ("USER_NOT_FOUND".equals(error)) {
+                response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+                response.getWriter().write("{\"status\": false, \"error\": \"USER_NOT_FOUND\"}");
+            } else if ("WRONG_PASSWORD".equals(error)) {
+                response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+                response.getWriter().write("{\"status\": false, \"error\": \"WRONG_PASSWORD\"}");
+            } else {
+                response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+                response.getWriter().write("{\"status\": false, \"error\": \"UNKNOWN_ERROR\"}");
+            }
         }
     }
 }
