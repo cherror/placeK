@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-
+//좌석 한개 클릭 했을 때 상세정보
 @WebServlet("/servlet/rentedSeat")
 public class RentedSeatServlet extends HttpServlet {
     private LocationController locationController;

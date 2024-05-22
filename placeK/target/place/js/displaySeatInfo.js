@@ -48,9 +48,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Confirm 버튼 클릭 이벤트
     confirmButton.addEventListener('click', () => {
-        const locationId = document.getElementById('selectLocation').value;
-        console.log(`Location ID: ${locationId}, Seat ID: ${selectedSeatID}`);
-        popup.style.display = 'none';
+        fetch("/servlet/confirm?seatID=" + selectedSeatID + "&locationID=" + locationID)
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message)
+                //새로고침하기
+                location.reload();
+                popup.style.display = 'none';
+            })
+            .catch(error => console.error('Error renting seat:', error));
     });
 
     // 모달 외부 클릭 시 모달 닫기

@@ -70,6 +70,15 @@
     <url-pattern>/displaySeatInfo</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>ConfirmServlet</servlet-name>
+    <servlet-class>servlet.ConfirmServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConfirmServlet</servlet-name>
+    <url-pattern>/confirm</url-pattern>
+  </servlet-mapping>
+
   <listener>
     <listener-class>res.AppContextListener</listener-class>
   </listener>
