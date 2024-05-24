@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 .then(data => {
                     // 반납이 완료되면 이동 및 알림
                     alert("반납이 완료되었습니다.");
-                    window.location.href = "/html/chooseOption.html";
+                    location.reload();
                 })
                 .catch(error => {
                     console.error("Error returning seat:", error);
@@ -70,7 +70,24 @@ document.addEventListener("DOMContentLoaded", function() {
     // 연장하기 버튼 클릭 시
     if (extendButton) {
         extendButton.addEventListener("click", function() {
-            alert("접근 가능한 서비스가 아닙니다");
+            alert("접근 불가능한 서비스입니다.");
+            // fetch("/servlet/extendSeat?seatID="  + seatNum + "&locationID=" + locationID)
+            //     .then(response => {
+            //         if (response.ok) {
+            //             return response.json();
+            //         }
+            //         throw new Error("Failed to return seat.");
+            //     })
+            //     .then(data => {
+            //         // 반납이 완료되면 이동 및 알림
+            //         alert("연장이 완료되었습니다.");
+            //         window.location.href = "/html/chooseOption.html";
+            //     })
+            //     .catch(error => {
+            //         console.error("Error returning seat:", error);
+            //         // 실패할 경우 알림
+            //         alert("연장에 실패했습니다. 다시 시도해주세요.");
+            //     });
         });
     }
 

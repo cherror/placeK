@@ -11,8 +11,9 @@ public class User {
     private int locationID;
     private String seatNum;
     private String rentedTime;
+    private String returnTime;
 
-    public User(int userId, String password, String major, boolean isRented, int locationID, String seatNum, String rentedTime) {
+    public User(int userId, String password, String major, boolean isRented, int locationID, String seatNum, String rentedTime, String returnTime) {
         this.userId = userId;
         this.password = password;
         this.major = major;
@@ -20,6 +21,7 @@ public class User {
         this.locationID = locationID;
         this.seatNum = seatNum;
         this.rentedTime = rentedTime;
+        this.returnTime = returnTime;
     }
 
     public void setID(int id) {
@@ -72,8 +74,23 @@ public class User {
         this.rentedTime = now.format(formatter);
     }
 
+    public void setRentedTime(String rentedTime) {
+        this.rentedTime = rentedTime;
+    }
+
     public String getRentedTime() {
         return rentedTime;
+    }
+
+    public void setReturnTime() {
+        LocalTime now = LocalTime.now();
+        LocalTime later = now.plusHours(2);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH시 mm분");
+        this.returnTime = later.format(formatter);
+    }
+
+    public String getReturnTime() {
+        return returnTime;
     }
 
     public String getSeatNumber() {

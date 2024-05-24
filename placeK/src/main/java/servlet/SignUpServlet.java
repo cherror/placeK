@@ -45,7 +45,7 @@ public class SignUpServlet extends HttpServlet {
             return;
         } else {
             int userIDInt = Integer.parseInt(userID);
-            User user = new User(userIDInt, password, major, false, -1, null, null);
+            User user = new User(userIDInt, password, major, false, -1, null, null, null);
             boolean isCreated = userController.createUser(user);
             if (isCreated) {
                 response.getWriter().write("{\"status\": true}");

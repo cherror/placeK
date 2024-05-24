@@ -93,8 +93,8 @@ public class UserController {
             int locationID = userDoc.getInteger("locationID", -1);
             String seatNum = userDoc.getString("seatNum");
             String rentedTime = userDoc.getString("rentedTime");
-
-            return new User(id, password, major, isRented, locationID, seatNum, rentedTime);
+            String returnTime = userDoc.getString("returnTime");
+            return new User(id, password, major, isRented, locationID, seatNum, rentedTime, returnTime);
         } else {
             return null;
         }
@@ -102,7 +102,7 @@ public class UserController {
     }
 
     //유저 좌석 대여 정보 업데이트
-    public void updateUserSeatInfo(int userID, boolean isRented, int locationID, String seatNum, String rentedTime) {
+    public void updateUserSeatInfo(int userID, boolean isRented, int locationID, String seatNum, String rentedTime, String returnTime) {
         MongoDatabase db = mongoClient.getDatabase("OOAD");
         MongoCollection<Document> collection = db.getCollection("users");
 
@@ -110,7 +110,9 @@ public class UserController {
         Document update = new Document("$set", new Document("isRented", isRented)
                 .append("locationID", locationID)
                 .append("seatNum", seatNum)
-                .append("rentedTime", rentedTime));
+                .append("rentedTime", rentedTime)
+                .append("returnTime", returnTime)
+        );
         collection.updateOne(filter, update);
 
         //2시간 뒤 자동 반납

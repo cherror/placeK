@@ -61,14 +61,16 @@ public class ConfirmServlet extends HttpServlet {
                 user.setLocationID(locationID);
                 user.setSeatNum(seatID);
                 user.setRentedTime();
+                user.setReturnTime();
                 session.setAttribute("user", user);
 
                 String rentedTime = user.getRentedTime();
+                String returnTime = user.getReturnTime();
 
                 //  2. userDB에 해당 좌석의 정보 저장
-                userController.updateUserSeatInfo(user.getID(),  true, locationID, seatID, rentedTime);
+                userController.updateUserSeatInfo(user.getID(),  true, locationID, seatID, rentedTime, returnTime);
                 // 3. seatDB에 좌석 업데이트
-                seatController.updateSeatStatus(locationID, seatID, true, rentedTime);
+                seatController.updateSeatStatus(locationID, seatID, true, rentedTime, returnTime);
 
                 response.getWriter().write("{\"status\": \"success\"}");
             } else {

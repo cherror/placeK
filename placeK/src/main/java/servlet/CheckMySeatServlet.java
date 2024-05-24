@@ -43,7 +43,6 @@ public class CheckMySeatServlet extends HttpServlet {
                     + "\"locationID\":\"" + user.getLocationID() + "\""
                     + "}";
             response.getWriter().write(userJson);
-            System.out.println(userJson);
         } else {
             response.getWriter().write("{}");
         }
