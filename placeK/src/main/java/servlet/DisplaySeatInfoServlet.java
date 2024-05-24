@@ -50,7 +50,6 @@ public class DisplaySeatInfoServlet extends HttpServlet {
             }
         }
         jsonResponse.append("]");
-        System.out.println(jsonResponse);
         response.getWriter().write(jsonResponse.toString());
     }
 }

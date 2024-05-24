@@ -2,6 +2,7 @@ package model;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 
 public class User {
     private int userId;
@@ -87,6 +88,18 @@ public class User {
         LocalTime later = now.plusHours(2);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH시 mm분");
         this.returnTime = later.format(formatter);
+    }
+
+    public void setExtendTime(){
+        try {
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH시 mm분");
+            LocalTime currentReturnTime = LocalTime.parse(returnTime, formatter);
+            LocalTime extendedTime = currentReturnTime.plusHours(2);
+            this.returnTime = extendedTime.format(formatter);
+        } catch (DateTimeParseException e) {
+            e.printStackTrace();
+            System.out.println("반납 시간 형식이 올바르지 않습니다.");
+        }
     }
 
     public String getReturnTime() {
