@@ -13,6 +13,7 @@ import javax.servlet.annotation.WebListener;
 
 @WebListener
 public class AppContextListener implements ServletContextListener {
+    private SeatAutoReturnService seatAutoReturnService;
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
@@ -31,14 +32,21 @@ public class AppContextListener implements ServletContextListener {
         LocationController locationController = new LocationController(mongoClient);
         SeatController seatController = new SeatController(mongoClient);
 
-
         // 컨트롤러를 서블릿 컨텍스트에 저장
         sce.getServletContext().setAttribute("userController", userController);
         sce.getServletContext().setAttribute("locationController", locationController);
         sce.getServletContext().setAttribute("seatController", seatController);
 
+        seatAutoReturnService = new SeatAutoReturnService(seatController, userController);
+        seatAutoReturnService.start();
+
         System.out.println("MongoDB connection and controllers initialized.");
     }
 
-
+    @Override
+    public void contextDestroyed(ServletContextEvent sce) {
+        if (seatAutoReturnService != null) {
+            seatAutoReturnService.stop();
+        }
+    }
 }

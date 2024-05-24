@@ -76,16 +76,14 @@ public class User {
         this.rentedTime = now.format(formatter);
     }
 
-    public void setRentedTime(String rentedTime) {
-        this.rentedTime = rentedTime;
-    }
-
     public String getRentedTime() {
         return rentedTime;
     }
 
     public void setReturnTime() {
         LocalTime now = LocalTime.now();
+        //테스트 코드 - 반납시간 1분 뒤로 설정
+//        LocalTime later = now.plusMinutes(1);
         LocalTime later = now.plusHours(2);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH시 mm분");
         this.returnTime = later.format(formatter);

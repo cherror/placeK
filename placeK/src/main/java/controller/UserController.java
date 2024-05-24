@@ -4,20 +4,25 @@ import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.MongoCollection;
+import com.mongodb.client.model.Filters;
 import org.bson.Document;
 import model.User;
 
 import javax.servlet.http.HttpSession;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 public class UserController {
     private MongoClient mongoClient;
+    private Map<Integer, HttpSession> userSessions = new ConcurrentHashMap<>();
 
     public UserController(MongoClient mongoClient) {
         this.mongoClient = mongoClient;
@@ -71,15 +76,6 @@ public class UserController {
         return result;
     }
 
-    public String getUserMajor(int userID) {
-        MongoDatabase db = mongoClient.getDatabase("OOAD");
-        MongoCollection<Document> collection = db.getCollection("users");
-        Document query = new Document("userID", userID);
-        Document userDoc = collection.find(query).first();
-
-        return userDoc.getString("major");
-    }
-
     public User getUserInfo(int userID) {
         MongoDatabase db = mongoClient.getDatabase("OOAD");
         MongoCollection<Document> collection = db.getCollection("users");
@@ -114,19 +110,38 @@ public class UserController {
                 .append("returnTime", returnTime)
         );
         collection.updateOne(filter, update);
+    }
 
-        //2시간 뒤 자동 반납
-//        if (isRented) {
-//            LocalTime twoHoursLater = now.plusHours(2);
-//            String formattedTwoHoursLater = twoHoursLater.format(formatter);
-//            String twoHoursLaterStr = twoHoursLater.format(formatter);
-//            if (twoHoursLater.isBefore(LocalTime.now())) {
-//                Document updatedInfo = new Document("isRented", false);
-//                update = new Document("$set", updatedInfo);
-//                collection.updateOne(filter, update);
-//
-//                System.out.println("유저의 대여 시간이 만료되어 자동으로 반납되었습니다.");
-//            }
-//        }
+    // 대여 중인 좌석이 있는 모든 사용자 조회
+    public List<User> getAllUsersWithRentedSeats() {
+        List<User> usersWithRentedSeats = new ArrayList<>();
+        MongoDatabase db = mongoClient.getDatabase("OOAD");
+        MongoCollection<Document> collection = db.getCollection("users");
+
+        for (Document doc : collection.find(Filters.and(
+                Filters.exists("rentedTime"),
+                Filters.exists("returnTime"),
+                Filters.eq("isRented", true)))) {
+            User user = new User(
+                    doc.getInteger("userID"),
+                    doc.getString("password"),
+                    doc.getString("major"),
+                    doc.getBoolean("isRented"),
+                    doc.getInteger("locationID"),
+                    doc.getString("seatNum"),
+                    doc.getString("rentedTime"),
+                    doc.getString("returnTime")
+            );
+            usersWithRentedSeats.add(user);
+        }
+        return usersWithRentedSeats;
+    }
+
+    public void addUserSession(int userID, HttpSession session) {
+        userSessions.put(userID, session);
+    }
+
+    public HttpSession getUserSession(int userID) {
+        return userSessions.get(userID);
     }
 }

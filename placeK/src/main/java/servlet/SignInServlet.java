@@ -44,6 +44,7 @@ public class SignInServlet extends HttpServlet {
             User user = userController.getUserInfo(userIDInt);
             HttpSession session = request.getSession();
             session.setAttribute("user", user);
+            userController.addUserSession(userIDInt, session);
             response.setContentType("application/json");
             response.getWriter().write("{\"status\": true}");
         } else {
