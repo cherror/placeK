@@ -39,6 +39,7 @@ public class CheckMySeatServlet extends HttpServlet {
                     + "\"location\":\"" + locationName + "\","
                     + "\"seatNum\":\"" + user.getSeatNumber() + "\","
                     + "\"rentedTime\":\"" + user.getRentedTime() + "\","
+                    + "\"returnTime\":\"" + user.getReturnTime() + "\","
                     + "\"major\":\"" + user.getMajor() + "\","
                     + "\"locationID\":\"" + user.getLocationID() + "\""
                     + "}";

@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.getElementById("location").textContent = `${user.location}`;
                 document.getElementById("seatNum").textContent = `${user.seatNum}`;
                 document.getElementById("rentedTime").textContent = `${user.rentedTime}`;
-
+                document.getElementById("returnTime").textContent = `${user.returnTime}`;
                 locationID = user.locationID;
                 seatNum = user.seatNum;
 
