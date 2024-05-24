@@ -102,22 +102,15 @@ public class UserController {
     }
 
     //유저 좌석 대여 정보 업데이트
-    public void updateUserSeatInfo(int userID, boolean isRented, int locationID, String seatNum) {
+    public void updateUserSeatInfo(int userID, boolean isRented, int locationID, String seatNum, String rentedTime) {
         MongoDatabase db = mongoClient.getDatabase("OOAD");
         MongoCollection<Document> collection = db.getCollection("users");
-
-        //대여 시간 정보 불러오기
-        LocalTime now = LocalTime.now();
-        System.out.println("now: " + now);
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH시 mm분");
-        String formatedNow = now.format(formatter);
-        System.out.println("formatedNow: " + formatedNow);
 
         Document filter = new Document("userID", userID);
         Document update = new Document("$set", new Document("isRented", isRented)
                 .append("locationID", locationID)
                 .append("seatNum", seatNum)
-                .append("rentedTime", formatedNow));
+                .append("rentedTime", rentedTime));
         collection.updateOne(filter, update);
 
         //2시간 뒤 자동 반납

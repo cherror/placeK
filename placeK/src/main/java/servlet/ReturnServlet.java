@@ -51,8 +51,8 @@ public class ReturnServlet extends HttpServlet {
         String seatIDStr = "seat"+seatID;
         //좌석 반납
         try {
-            seatController.updateSeatStatus(locationID, seatIDStr, false);
-            userController.updateUserSeatInfo(user.getID(), false, -1, null);
+            seatController.updateSeatStatus(locationID, seatIDStr, false, null);
+            userController.updateUserSeatInfo(user.getID(), false, -1, null, null);
 
             user.setRented(false);
             user.setLocationID(-1);

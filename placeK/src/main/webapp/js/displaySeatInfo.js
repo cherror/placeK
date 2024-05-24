@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const seatElement = document.getElementById(seatID);
                 const status = seat.isRented ? 'occupied' : 'available';
                 seatElement.classList.add(status);
+                console.log(`Seat Number: ${seat.seatNum}, Rent Time: ${seat.rentTime}`);
             });
         })
         .catch(error => console.error('Error fetching seat data:', error));

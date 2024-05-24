@@ -76,12 +76,12 @@ public class SeatController {
     }
 
     //좌석 상태 업데이트하기 (좌석 반납)
-    public void updateSeatStatus(int locationID, String seatNum, boolean isRented){
+    public void updateSeatStatus(int locationID, String seatNum, boolean isRented, String rentedTime){
         MongoDatabase db = mongoClient.getDatabase("OOAD");
         MongoCollection<Document> collection = db.getCollection("seats");
         Document filter = new Document("locationID", locationID).append("seatNum", seatNum);
         Document update = new Document("$set", new Document("isRented", isRented)
-                .append("rentedTime", isRented? "2020202": null));
+                .append("rentedTime", isRented? rentedTime: null));
         collection.updateOne(filter, update);
     }
 

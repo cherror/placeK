@@ -1,19 +1,21 @@
 package model;
 
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 public class Seat {
     public String seatNum;
     public int locationID;
     public boolean isRented;
-    public String rentTime;
+    public String rentedTime;
     public String rentedBy;
 
-    public Seat(int locationID, String seatNum, boolean isRented, String rentTime, String rentedBy) {
+    public Seat(int locationID, String seatNum, boolean isRented, String rentedTime, String rentedBy) {
         this.seatNum = seatNum;
         this.locationID = locationID;
         this.isRented = isRented;
-        this.rentTime = rentTime;
+        this.rentedTime = rentedTime;
         this.rentedBy = rentedBy;
     }
 
@@ -41,12 +43,14 @@ public class Seat {
         return isRented;
     }
 
-    public void setRentTime(String rentTime) {
-        this.rentTime = rentTime;
+    public void setRentTime() {
+        LocalTime now = LocalTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH시 mm분");
+        this.rentedTime = now.format(formatter);
     }
 
     public String getRentTime() {
-        return rentTime;
+        return rentedTime;
     }
 
     public void setRentedBy(String rentedBy) {

@@ -1,5 +1,7 @@
 package servlet;
 
+import controller.LocationController;
+import controller.SeatController;
 import controller.UserController;
 import model.User;
 

@@ -56,21 +56,20 @@ public class ConfirmServlet extends HttpServlet {
 
         if(locationInfo.getAvailableMajors() != null) {
             if(availableMajor.contains(user.getMajor()) && (!user.isRented())) {
-//                2. userDB에 해당 좌석의 정보 저장
-                userController.updateUserSeatInfo(user.getID(),  true, locationID, seatID);
-//                3. seatDB에 좌석 업데이트
-                seatController.updateSeatStatus(locationID, seatID, true);
-
+                //session 관리
                 user.setRented(true);
                 user.setLocationID(locationID);
                 user.setSeatNum(seatID);
-
-                LocalTime now = LocalTime.now();
-                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH시 mm분");
-                String formatedNow = now.format(formatter);
-                user.setRentedTime(formatedNow);
-
+                user.setRentedTime();
                 session.setAttribute("user", user);
+
+                String rentedTime = user.getRentedTime();
+
+                //  2. userDB에 해당 좌석의 정보 저장
+                userController.updateUserSeatInfo(user.getID(),  true, locationID, seatID, rentedTime);
+                // 3. seatDB에 좌석 업데이트
+                seatController.updateSeatStatus(locationID, seatID, true, rentedTime);
+
                 response.getWriter().write("{\"status\": \"success\"}");
             } else {
                 response.getWriter().write("{\"status\": \"failure\"}");

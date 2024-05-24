@@ -1,5 +1,8 @@
 package model;
 
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+
 public class User {
     private int userId;
     private String password;
@@ -63,8 +66,10 @@ public class User {
         return seatNum;
     }
 
-    public void setRentedTime(String rentedTime) {
-        this.rentedTime = rentedTime;
+    public void setRentedTime() {
+        LocalTime now = LocalTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH시 mm분");
+        this.rentedTime = now.format(formatter);
     }
 
     public String getRentedTime() {

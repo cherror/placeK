@@ -11,7 +11,17 @@
   <component name="ChangeListManager">
     <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="create: logout link">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LocationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LocationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SeatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SeatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Seat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ConfirmServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ConfirmServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/DisplaySeatInfoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/DisplaySeatInfoServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ReturnServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ReturnServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/SignInServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/SignInServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/displaySeatInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/displaySeatInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/SignInServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/SignInServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +239,8 @@
       <workItem from="1716356605353" duration="339000" />
       <workItem from="1716356947912" duration="9640000" />
       <workItem from="1716390865866" duration="3765000" />
-      <workItem from="1716397053740" duration="9453000" />
+      <workItem from="1716397053740" duration="10336000" />
+      <workItem from="1716524504813" duration="2974000" />
     </task>
     <task id="LOCAL-00001" summary="msg">
       <option name="closed" value="true" />

@@ -49,21 +49,21 @@ public class LocationController {
             Document document = new Document("locationID", 1)
                     .append("locationName", "미래관-자율주행스튜디오")
                     .append("seatCount", 40)
-                    .append("availableMajors", "software");
+                    .append("availableMajors", "Computer Science");
             collection.insertOne(document);
             System.out.println("미래관 자율주행스튜디오 생성");
         } else if(locationID == 2) {
             Document document = new Document("locationID", 2)
                     .append("locationName", "미래관-무한상상실")
                     .append("seatCount", 30)
-                    .append("availableMajors", "software");
+                    .append("availableMajors", "Computer Science");
             collection.insertOne(document);
             System.out.println("미래관 무한상상실 생성");
         } else if(locationID == 3) {
             Document document = new Document("locationID", 3)
                     .append("locationName", "미래관-K Smart Lounge")
                     .append("seatCount", 24)
-                    .append("availableMajors", "software");
+                    .append("availableMajors", "Computer Science");
             collection.insertOne(document);
             System.out.println("미래관 K-Smart Lounge 생성");
         } else if(locationID == 4) {
