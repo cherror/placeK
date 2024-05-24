@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 .then(data => {
                     // 반납이 완료되면 이동 및 알림
                     alert("반납이 완료되었습니다.");
-                    location.reload();
+                    window.location.href = "/html/chooseOption.html";
                 })
                 .catch(error => {
                     console.error("Error returning seat:", error);
@@ -76,8 +76,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     if(data.status === "success"){
                         alert("좌석 연장이 완료되었습니다.");
                         location.reload();
+                    } else if(data.status === "notime") {
+                        alert("좌석 시간이 30분 미만으로 남았을 때 연장 가능합니다.");
+                        location.reload();
                     } else {
-                        alert("좌석 연장에 실패했습니다.");
+                        alert("좌석 연장에 실패하였습니다.");
                         location.reload();
                     }
                 })

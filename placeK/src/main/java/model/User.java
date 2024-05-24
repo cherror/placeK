@@ -3,6 +3,7 @@ package model;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
+import java.time.temporal.ChronoUnit;
 
 public class User {
     private int userId;
@@ -108,5 +109,18 @@ public class User {
 
     public String getSeatNumber() {
         return seatNum.replaceAll("\\D+", "");
+    }
+
+    public long getRemainingMinutes() {
+        try {
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH시 mm분");
+            LocalTime currentTime = LocalTime.now();
+            LocalTime returnTime = LocalTime.parse(this.returnTime, formatter);
+            return ChronoUnit.MINUTES.between(currentTime, returnTime);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("시간 형식이 올바르지 않습니다.");
+            return -1;
+        }
     }
 }

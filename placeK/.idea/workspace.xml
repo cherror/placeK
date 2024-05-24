@@ -10,7 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="create: logout link">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/checkMySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/checkMySeat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ExtendServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ExtendServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/checkMySeat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/checkMySeat.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -233,7 +234,7 @@
       <workItem from="1716524504813" duration="3932000" />
       <workItem from="1716528614870" duration="2969000" />
       <workItem from="1716531953364" duration="380000" />
-      <workItem from="1716533250600" duration="876000" />
+      <workItem from="1716533250600" duration="1474000" />
     </task>
     <task id="LOCAL-00001" summary="msg">
       <option name="closed" value="true" />

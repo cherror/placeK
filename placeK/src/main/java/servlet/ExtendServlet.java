@@ -52,6 +52,14 @@ public class ExtendServlet extends HttpServlet {
         HttpSession session = request.getSession();
         User user = (User) session.getAttribute("user");
 
+        // 잔여 시간이 30분 이하인지 확인
+        long remainingMinutes = user.getRemainingMinutes();
+        if (remainingMinutes > 30) {
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            response.getWriter().write("{\"status\":\"notime\"}");
+            return;
+        }
+
         //시간 연장
         try {
             user.setExtendTime();
