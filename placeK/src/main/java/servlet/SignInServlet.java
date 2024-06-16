@@ -4,6 +4,7 @@ import controller.LocationController;
 import controller.SeatController;
 import controller.UserController;
 import model.User;
+import org.mindrot.jbcrypt.BCrypt;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -39,27 +40,25 @@ public class SignInServlet extends HttpServlet {
             return;
         }
 
-        Map<String, Object> loginResult = userController.loginUser(userIDInt, password);
-        if ((Boolean) loginResult.get("status")) {
-            User user = userController.getUserInfo(userIDInt);
+        User user = userController.getUserInfo(userIDInt);
+        if (user == null) {
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            response.setContentType("application/json");
+            response.getWriter().write("{\"status\": false, \"error\": \"USER_NOT_FOUND\"}");
+            return;
+        }
+
+        String storedHashedPassword = user.getPassword();
+        if (BCrypt.checkpw(password, storedHashedPassword)) {
             HttpSession session = request.getSession();
             session.setAttribute("user", user);
             userController.addUserSession(userIDInt, session);
             response.setContentType("application/json");
             response.getWriter().write("{\"status\": true}");
         } else {
-            String error = (String) loginResult.get("error");
             response.setContentType("application/json");
-            if ("USER_NOT_FOUND".equals(error)) {
-                response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-                response.getWriter().write("{\"status\": false, \"error\": \"USER_NOT_FOUND\"}");
-            } else if ("WRONG_PASSWORD".equals(error)) {
-                response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-                response.getWriter().write("{\"status\": false, \"error\": \"WRONG_PASSWORD\"}");
-            } else {
-                response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-                response.getWriter().write("{\"status\": false, \"error\": \"UNKNOWN_ERROR\"}");
-            }
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            response.getWriter().write("{\"status\": false, \"error\": \"WRONG_PASSWORD\"}");
         }
     }
 }

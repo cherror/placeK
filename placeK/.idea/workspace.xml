@@ -10,22 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="create: logout link">
-      <change afterPath="$PROJECT_DIR$/src/main/java/res/SeatAutoReturnService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/res/AppContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/res/AppContextListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/SignInServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/SignInServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/checkMySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/checkMySeat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/res/AppContextListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/res/AppContextListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/ExtendServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/ExtendServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/res/AppContextListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/res/AppContextListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/ExtendServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/servlet/ExtendServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/checkMySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/checkMySeat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/SignUpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/SignUpServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +235,9 @@
       <workItem from="1716524504813" duration="3932000" />
       <workItem from="1716528614870" duration="2969000" />
       <workItem from="1716531953364" duration="380000" />
-      <workItem from="1716533250600" duration="5661000" />
+      <workItem from="1716533250600" duration="6153000" />
+      <workItem from="1716620515412" duration="8000" />
+      <workItem from="1718552252749" duration="1014000" />
     </task>
     <task id="LOCAL-00001" summary="msg">
       <option name="closed" value="true" />

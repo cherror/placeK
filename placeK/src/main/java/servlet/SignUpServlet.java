@@ -2,6 +2,8 @@ package servlet;
 
 import model.User;
 import controller.UserController;
+import org.mindrot.jbcrypt.BCrypt;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -45,7 +47,9 @@ public class SignUpServlet extends HttpServlet {
             return;
         } else {
             int userIDInt = Integer.parseInt(userID);
-            User user = new User(userIDInt, password, major, false, -1, null, null, null);
+            String hashedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
+
+            User user = new User(userIDInt, hashedPassword, major, false, -1, null, null, null);
             boolean isCreated = userController.createUser(user);
             if (isCreated) {
                 response.getWriter().write("{\"status\": true}");
