@@ -45,18 +45,27 @@ public class SignUpServlet extends HttpServlet {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             response.getWriter().write("{\"status\": false, \"error\": \"PASSWORD_MISMATCH\"}");
             return;
-        } else {
-            int userIDInt = Integer.parseInt(userID);
-            String hashedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
+        }
 
-            User user = new User(userIDInt, hashedPassword, major, false, -1, null, null, null);
-            boolean isCreated = userController.createUser(user);
-            if (isCreated) {
-                response.getWriter().write("{\"status\": true}");
-            } else {
-                response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-                response.getWriter().write("{\"status\": false, \"error\": \"USER_ALREADY_EXISTS\"}");
-            }
+        int userIDInt = Integer.parseInt(userID);
+        User existingUser = userController.getUserInfo(userIDInt);
+
+        if (existingUser != null) {
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            response.getWriter().write("{\"status\": false, \"error\": \"ID_ALREADY_EXISTS\"}");
+            return;
+        }
+
+        String hashedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
+
+        User user = new User(userIDInt, hashedPassword, major, false, -1, null, null, null);
+        boolean isCreated = userController.createUser(user);
+
+        if (isCreated) {
+            response.getWriter().write("{\"status\": true}");
+        } else {
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            response.getWriter().write("{\"status\": false, \"error\": \"USER_CREATION_FAILED\"}");
         }
     }
 }

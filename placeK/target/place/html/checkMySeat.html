@@ -18,7 +18,7 @@
             id="beforePageBtn"
     />
     <div class="rectangle">
-        <div class="content">
+        <div class="check-content">
             <div class="UserInformation">
                 <div class="userImage">
                     <img src="/img/user.png" alt="User Image" />
@@ -30,23 +30,23 @@
                 </div>
             </div>
             <div class="seat-info-content-and-data">
-                <div class="title">My Seat Infomation</div>
+                <div class="title">My Seat Information</div>
                 <div>
                     <div class="seat-info-content">
-                                <span class="seat-info-content-bold">Location</span
-                                ><span id="location"></span>
+                        <span class="seat-info-content-bold">Location</span
+                        ><span id="location"></span>
                     </div>
                     <div class="seat-info-content">
-                                <span class="seat-info-content-bold">Seat Number</span
-                                ><span id="seatNum"></span>
+                        <span class="seat-info-content-bold">Seat Number</span
+                        ><span id="seatNum"></span>
                     </div>
                     <div class="seat-info-content">
-                                <span class="seat-info-content-bold">Check-in Time</span
-                                ><span id="rentedTime"></span>
+                        <span class="seat-info-content-bold">Check-in Time</span
+                        ><span id="rentedTime"></span>
                     </div>
                     <div class="seat-info-content">
-                                <span class="seat-info-content-bold">Check-out Time</span
-                                ><span id="returnTime"></span>
+                        <span class="seat-info-content-bold">Check-out Time</span
+                        ><span id="returnTime"></span>
                     </div>
                 </div>
             </div>
@@ -61,6 +61,7 @@
         </div>
     </div>
 </div>
+<!-- 반납 팝업 -->
 <div class="popup" id="returnPopup">
     <div class="popup-rectangle">
         <div class="title">
@@ -72,6 +73,22 @@
             </button>
             <button class="confirm-button" id="confirmButton">
                 <span class="text">반납하기</span>
+            </button>
+        </div>
+    </div>
+</div>
+<!-- 연장 팝업 -->
+<div class="popup" id="extendPopup">
+    <div class="popup-rectangle">
+        <div class="title">
+            <span class="popup-bold">연장</span>하시겠습니까?
+        </div>
+        <div class="popup-button-container">
+            <button class="cancel-button" id="cancelButton2">
+                <span class="text">취소</span>
+            </button>
+            <button class="confirm-button" id="confirmButton2">
+                <span class="text">연장하기</span>
             </button>
         </div>
     </div>

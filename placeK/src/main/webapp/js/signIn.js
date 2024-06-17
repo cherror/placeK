@@ -38,6 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     alert("아이디가 존재하지 않습니다.");
                 } else if (error.message === "WRONG_PASSWORD") {
                     alert("비밀번호가 일치하지 않습니다.");
+                } else if (error.message === "ID_MUST_BE_NUMERIC") {
+                    alert("ID는 숫자로만 구성되어야 합니다.");
                 } else {
                     alert("로그인에 실패했습니다. 다시 시도해주세요.");
                 }

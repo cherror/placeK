@@ -10,10 +10,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="create: logout link">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ConfirmServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ConfirmServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/SignInServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/SignInServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/SignUpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/SignUpServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/checkMySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/checkMySeat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/displaySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/displaySeat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/checkMySeat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/checkMySeat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/KsmartLounge.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/KsmartLounge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/business.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/business.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/law.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/law.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/mss.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/mss.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/checkMySeat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/checkMySeat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/displaySeatInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/displaySeatInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/signIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/signIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/signUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/signUp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/css/checkMySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/css/checkMySeat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/css/popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/js/checkMySeat.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/js/checkMySeat.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -13,10 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 
-//좌석 신청하기
 @WebServlet("/servlet/confirm")
 public class ConfirmServlet extends HttpServlet {
     private LocationController locationController;
@@ -54,30 +51,32 @@ public class ConfirmServlet extends HttpServlet {
         Location locationInfo = locationController.getLocationInfo(locationID);
         String availableMajor = locationInfo.getAvailableMajors();
 
-        if(locationInfo.getAvailableMajors() != null) {
-            if(availableMajor.contains(user.getMajor()) && (!user.isRented())) {
-                //session 관리
-                user.setRented(true);
-                user.setLocationID(locationID);
-                user.setSeatNum(seatID);
-                user.setRentedTime();
-                user.setReturnTime();
-                session.setAttribute("user", user);
-
-                String rentedTime = user.getRentedTime();
-                String returnTime = user.getReturnTime();
-
-                //  2. userDB에 해당 좌석의 정보 저장
-                userController.updateUserSeatInfo(user.getID(),  true, locationID, seatID, rentedTime, returnTime);
-                // 3. seatDB에 좌석 업데이트
-                seatController.updateSeatStatus(locationID, seatID, true, rentedTime, returnTime);
-
-                response.getWriter().write("{\"status\": \"success\"}");
-            } else {
-                response.getWriter().write("{\"status\": \"failure\"}");
-            }
+        if (user.isRented()) {
+            jsonResponse = "{\"status\": \"seat_already_assigned\"}";
+        } else if (availableMajor != null && !availableMajor.contains(user.getMajor())) {
+            jsonResponse = "{\"status\": \"major_mismatch\"}";
         } else {
-                response.getWriter().write("{\"status\": \"failure\"}");
+            //session 관리
+            user.setRented(true);
+            user.setLocationID(locationID);
+            user.setSeatNum(seatID);
+            user.setRentedTime();
+            user.setReturnTime();
+            session.setAttribute("user", user);
+
+            String rentedTime = user.getRentedTime();
+            String returnTime = user.getReturnTime();
+
+            // userDB에 해당 좌석의 정보 저장
+            userController.updateUserSeatInfo(user.getID(), true, locationID, seatID, rentedTime, returnTime);
+            // seatDB에 좌석 업데이트
+            seatController.updateSeatStatus(locationID, seatID, true, rentedTime, returnTime);
+
+            jsonResponse = "{\"status\": \"success\"}";
         }
+
+        response.setContentType("application/json");
+        response.setCharacterEncoding("UTF-8");
+        response.getWriter().write(jsonResponse);
     }
 }

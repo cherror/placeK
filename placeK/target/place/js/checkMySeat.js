@@ -1,14 +1,16 @@
-document.addEventListener("DOMContentLoaded", function() {
-    let locationID;
-    let seatNum;
-
-    // 반납 모달 열기
-    const returnPopup = document.getElementById("returnPopup");
+document.addEventListener("DOMContentLoaded", function () {
     const returnButton = document.getElementById("returnButton");
-    const cancelButton = document.getElementById("cancelButton");
-    const confirmButton = document.getElementById("confirmButton");
     const extendButton = document.getElementById("extendButton");
     const beforePageBtn = document.getElementById("beforePageBtn");
+
+    const returnPopup = document.getElementById("returnPopup");
+    const extendPopup = document.getElementById("extendPopup");
+    const cancelButton = document.getElementById("cancelButton");
+    const confirmButton = document.getElementById("confirmButton");
+    const cancelButton2 = document.getElementById("cancelButton2");
+    const confirmButton2 = document.getElementById("confirmButton2");
+
+    let userSeatInfo = null;
 
     // 사용자 정보 불러오기
     fetch("/servlet/checkMySeat")
@@ -21,9 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.getElementById("seatNum").textContent = `${user.seatNum}`;
                 document.getElementById("rentedTime").textContent = `${user.rentedTime}`;
                 document.getElementById("returnTime").textContent = `${user.returnTime}`;
-                locationID = user.locationID;
-                seatNum = user.seatNum;
-
+                userSeatInfo = user;
             }
         })
         .catch(error => {
@@ -31,52 +31,87 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("welcomeMessage").textContent = "Error loading user information.";
         });
 
+    // 반납 버튼 클릭 시
     if (returnButton) {
-        returnButton.addEventListener("click", function() {
+        returnButton.addEventListener("click", function () {
             returnPopup.style.display = "flex";
         });
+    } else {
+        console.error("Element with id 'returnButton' not found");
     }
 
-    // 반납하기 버튼 클릭 시
+    // 연장 버튼 클릭 시
+    if (extendButton) {
+        extendButton.addEventListener("click", function () {
+            if (userSeatInfo) {
+                fetch(`/servlet/checkExtendable?seatID=${userSeatInfo.seatNum}&locationID=${userSeatInfo.locationID}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.status === "extendable") {
+                            extendPopup.style.display = "flex";
+                        } else {
+                            alert("연장 가능한 시간이 아닙니다.");
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error checking extendable time:", error);
+                        alert("연장 가능한 시간 확인에 실패했습니다.");
+                    });
+            }
+        });
+    } else {
+        console.error("Element with id 'extendButton' not found");
+    }
+
+    // 반납 팝업 취소 버튼 클릭 시
+    if (cancelButton) {
+        cancelButton.addEventListener("click", function () {
+            returnPopup.style.display = "none";
+        });
+    } else {
+        console.error("Element with id 'cancelButton' not found");
+    }
+
+    // 반납 팝업 확인 버튼 클릭 시
     if (confirmButton) {
-        confirmButton.addEventListener("click", function() {
-            fetch("/servlet/returnSeat?seatID="  + seatNum + "&locationID=" + locationID)
+        confirmButton.addEventListener("click", function () {
+            fetch(`/servlet/returnSeat?seatID=${userSeatInfo.seatNum}&locationID=${userSeatInfo.locationID}`)
                 .then(response => {
                     if (response.ok) {
-                        return response.json();
+                        alert("반납이 완료되었습니다.");
+                        window.location.href = "/html/chooseOption.html";
+                    } else {
+                        throw new Error("반납 실패");
                     }
-                    throw new Error("Failed to return seat.");
-                })
-                .then(data => {
-                    // 반납이 완료되면 이동 및 알림
-                    alert("반납이 완료되었습니다.");
-                    window.location.href = "/html/chooseOption.html";
                 })
                 .catch(error => {
                     console.error("Error returning seat:", error);
-                    // 실패할 경우 알림
                     alert("반납에 실패했습니다. 다시 시도해주세요.");
                 });
         });
+    } else {
+        console.error("Element with id 'confirmButton' not found");
     }
 
-    // 취소 버튼 클릭 시
-    if (cancelButton) {
-        cancelButton.addEventListener("click", function() {
-            returnPopup.style.display = "none";
+    // 연장 팝업 취소 버튼 클릭 시
+    if (cancelButton2) {
+        cancelButton2.addEventListener("click", function () {
+            extendPopup.style.display = "none";
         });
+    } else {
+        console.error("Element with id 'cancelButton2' not found");
     }
 
-    // 연장하기 버튼 클릭 시
-    if (extendButton) {
-        extendButton.addEventListener("click", function() {
-            fetch("/servlet/extendSeat?seatID="  + seatNum + "&locationID=" + locationID)
+    // 연장 팝업 확인 버튼 클릭 시
+    if (confirmButton2) {
+        confirmButton2.addEventListener("click", function () {
+            fetch(`/servlet/extendSeat?seatID=${userSeatInfo.seatNum}&locationID=${userSeatInfo.locationID}`)
                 .then(response => response.json())
                 .then(data => {
-                    if(data.status === "success"){
+                    if (data.status === "success") {
                         alert("좌석 연장이 완료되었습니다.");
                         location.reload();
-                    } else if(data.status === "notime") {
+                    } else if (data.status === "notime") {
                         alert("좌석 시간이 30분 미만으로 남았을 때 연장 가능합니다.");
                         location.reload();
                     } else {
@@ -84,14 +119,21 @@ document.addEventListener("DOMContentLoaded", function() {
                         location.reload();
                     }
                 })
-                .catch(error => console.error('Error renting seat:', error))
+                .catch(error => {
+                    console.error("Error extending seat:", error);
+                    alert("연장에 실패했습니다. 다시 시도해주세요.");
+                });
         });
+    } else {
+        console.error("Element with id 'confirmButton2' not found");
     }
 
     // 이전 페이지 버튼 클릭 시
     if (beforePageBtn) {
-        beforePageBtn.addEventListener("click", function() {
+        beforePageBtn.addEventListener("click", function () {
             window.location.href = "/html/chooseOption.html";
         });
+    } else {
+        console.error("Element with id 'beforePageBtn' not found");
     }
 });

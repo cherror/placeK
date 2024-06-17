@@ -1,7 +1,5 @@
 package servlet;
 
-import controller.LocationController;
-import controller.SeatController;
 import controller.UserController;
 import model.User;
 import org.mindrot.jbcrypt.BCrypt;
@@ -13,7 +11,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.Map;
 
 @WebServlet("/servlet/signIn")
 public class SignInServlet extends HttpServlet {
@@ -31,19 +28,27 @@ public class SignInServlet extends HttpServlet {
         String userID = request.getParameter("username");
         String password = request.getParameter("password");
 
+        response.setContentType("application/json");
+        response.setCharacterEncoding("UTF-8");
+
+        if (userID.isEmpty() || password.isEmpty()) {
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            response.getWriter().write("{\"status\": false, \"error\": \"MISSING_FIELDS\"}");
+            return;
+        }
+
         int userIDInt;
         try {
             userIDInt = Integer.parseInt(userID);
         } catch (NumberFormatException e) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-            response.getWriter().write("{\"status\": false, \"error\": \"ID must be an integer\"}");
+            response.getWriter().write("{\"status\": false, \"error\": \"ID_MUST_BE_NUMERIC\"}");
             return;
         }
 
         User user = userController.getUserInfo(userIDInt);
         if (user == null) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-            response.setContentType("application/json");
             response.getWriter().write("{\"status\": false, \"error\": \"USER_NOT_FOUND\"}");
             return;
         }
@@ -53,10 +58,8 @@ public class SignInServlet extends HttpServlet {
             HttpSession session = request.getSession();
             session.setAttribute("user", user);
             userController.addUserSession(userIDInt, session);
-            response.setContentType("application/json");
             response.getWriter().write("{\"status\": true}");
         } else {
-            response.setContentType("application/json");
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             response.getWriter().write("{\"status\": false, \"error\": \"WRONG_PASSWORD\"}");
         }

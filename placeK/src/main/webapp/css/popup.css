@@ -34,6 +34,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 /* 정말로 반납하시겠습니까? */
@@ -107,14 +108,9 @@
     color: #FFFFFF;
 }
 
-.seat-info-bold, .popup-bold {
-    font-weight: bold;
+.bold {
+    font-weight: 400;
     margin-right: 15px;
-}
-
-.popup-rectangle2 {
-    display: flex;
-    padding: 20px;
 }
 
 .content-and-data {
@@ -124,7 +120,7 @@
     padding: 10px;
 }
 
-.seat-info-content {
+.content {
     display: flex;
     flex-direction: column;
     gap: 10px;
