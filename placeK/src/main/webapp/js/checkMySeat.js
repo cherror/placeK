@@ -44,19 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (extendButton) {
         extendButton.addEventListener("click", function () {
             if (userSeatInfo) {
-                fetch(`/servlet/checkExtendable?seatID=${userSeatInfo.seatNum}&locationID=${userSeatInfo.locationID}`)
-                    .then(response => response.json())
-                    .then(data => {
-                        if (data.status === "extendable") {
-                            extendPopup.style.display = "flex";
-                        } else {
-                            alert("연장 가능한 시간이 아닙니다.");
-                        }
-                    })
-                    .catch(error => {
-                        console.error("Error checking extendable time:", error);
-                        alert("연장 가능한 시간 확인에 실패했습니다.");
-                    });
+                extendPopup.style.display = "flex"; // Show the extend popup first
             }
         });
     } else {
@@ -111,8 +99,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (data.status === "success") {
                         alert("좌석 연장이 완료되었습니다.");
                         location.reload();
-                    } else if (data.status === "notime") {
-                        alert("좌석 시간이 30분 미만으로 남았을 때 연장 가능합니다.");
+                    } else if (data.status === "notyet") {
+                        alert("잔여 시간이 30분 이내일 때부터 연장 가능합니다.");
                         location.reload();
                     } else {
                         alert("좌석 연장에 실패하였습니다.");

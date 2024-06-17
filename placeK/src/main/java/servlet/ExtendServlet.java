@@ -56,7 +56,7 @@ public class ExtendServlet extends HttpServlet {
         long remainingMinutes = user.getRemainingMinutes();
         if (remainingMinutes > 30) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-            response.getWriter().write("{\"status\":\"notime\"}");
+            response.getWriter().write("{\"status\":\"notyet\"}");
             return;
         }
 
