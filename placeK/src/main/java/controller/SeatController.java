@@ -35,7 +35,8 @@ public class SeatController {
                     seatDoc.getString("seatNum"),
                     seatDoc.getBoolean("isRented"),
                     seatDoc.getString("rentedTime"),
-                    seatDoc.getString("rentedBy")
+                    seatDoc.getString("rentedBy"),
+                    seatDoc.getString("returnTime")
             );
             seatList.add(seat);
         }
@@ -55,7 +56,7 @@ public class SeatController {
             boolean isRented = seatDoc.getBoolean("isRented");
 
             Seat seat = new Seat(
-                    id, seatNumber, isRented, null, null
+                    id, seatNumber, isRented, null, null, null
             );
 
             return seat;

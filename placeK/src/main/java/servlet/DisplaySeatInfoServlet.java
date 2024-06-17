@@ -39,10 +39,11 @@ public class DisplaySeatInfoServlet extends HttpServlet {
             jsonResponse.append("\"locationID\":").append(seat.getLocationID()).append(",");
             jsonResponse.append("\"seatNum\":\"").append(seat.getSeatNumber()).append("\",");
             jsonResponse.append("\"isRented\":").append(seat.getIsRented()).append(",");
+
             if (seat.getRentTime() != null) {
-                jsonResponse.append("\"rentTime\":\"").append(seat.getRentTime()).append("\"");
+                jsonResponse.append("\"remainingTime\":\"").append(seat.getRemainingMinutes()).append("\"");
             } else {
-                jsonResponse.append("\"rentTime\":null");
+                jsonResponse.append("\"remainingTime\":null");
             }
             jsonResponse.append("}");
             if (i < seatList.size() - 1) {

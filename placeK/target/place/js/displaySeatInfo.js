@@ -18,20 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 const seatID = `seat${seat.seatNum}`;
                 const seatElement = document.getElementById(seatID);
                 const status = seat.isRented ? 'occupied' : 'available';
+                // const remainingTime = seat.remainingTime;
                 seatElement.classList.add(status);
 
                 const seatInfoTextElement = seatElement.querySelector('.seat-info-text');
                 const remainingTimeElement = seatInfoTextElement.querySelector('.remaining-time');
-
                 if (seat.isRented) {
                     seatInfoTextElement.classList.add('seat-rented');
-                    remainingTimeElement.textContent = seat.rentTime ? formatTime(seat.rentTime) : '';
+                    remainingTimeElement.textContent = seat.remainingTime ? seat.remainingTime : '';
                 } else {
                     seatInfoTextElement.classList.remove('seat-rented');
                     remainingTimeElement.textContent = '';
                 }
-
-                console.log(`Seat Number: ${seat.seatNum}, Rent Time: ${seat.rentTime}`);
             });
         })
         .catch(error => console.error('Error fetching seat data:', error));

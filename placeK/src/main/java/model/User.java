@@ -72,7 +72,7 @@ public class User {
 
     public void setRentedTime() {
         LocalTime now = LocalTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH시 mm분");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
         this.rentedTime = now.format(formatter);
     }
 
@@ -85,13 +85,13 @@ public class User {
         //테스트 코드 - 반납시간 1분 뒤로 설정
         LocalTime later = now.plusMinutes(1);
         //LocalTime later = now.plusHours(2);
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH시 mm분");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
         this.returnTime = later.format(formatter);
     }
 
     public void setExtendTime(){
         try {
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH시 mm분");
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
             LocalTime currentReturnTime = LocalTime.parse(returnTime, formatter);
             LocalTime extendedTime = currentReturnTime.plusHours(2);
             this.returnTime = extendedTime.format(formatter);
@@ -111,7 +111,7 @@ public class User {
 
     public long getRemainingMinutes() {
         try {
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH시 mm분");
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
             LocalTime currentTime = LocalTime.now();
             LocalTime returnTime = LocalTime.parse(this.returnTime, formatter);
             return ChronoUnit.MINUTES.between(currentTime, returnTime);

@@ -43,7 +43,7 @@ public class SeatAutoReturnService {
     }
 
     private void checkAndReturnSeats() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH시 mm분");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
         LocalTime currentTime = LocalTime.now();
 
         for (User user : userController.getAllUsersWithRentedSeats()) {

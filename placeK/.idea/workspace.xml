@@ -10,10 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="create: logout link">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ExtendServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ExtendServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/checkMySeat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/checkMySeat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/js/checkMySeat.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/js/checkMySeat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SeatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SeatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Seat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/res/SeatAutoReturnService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/res/SeatAutoReturnService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/DisplaySeatInfoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/DisplaySeatInfoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/displaySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/displaySeat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/displaySeatInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/displaySeatInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/SeatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/SeatController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Seat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Seat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/res/SeatAutoReturnService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/res/SeatAutoReturnService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/servlet/DisplaySeatInfoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/DisplaySeatInfoServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/css/displaySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/css/displaySeat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/jjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/jjs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/place/js/displaySeatInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/js/displaySeatInfo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +46,12 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/backend" />
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/backend" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
