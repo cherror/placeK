@@ -17,24 +17,8 @@ public class Location {
         return locationID;
     }
 
-    public void setLocationName(String name){
-        this.locationName = name;
-    }
-
     public String getLocationName(){
         return locationName;
-    }
-
-    public void setSeatCount(int count){
-        this.seatCount = count;
-    }
-
-    public int getSeatCount(){
-        return seatCount;
-    }
-
-    public void setAvailableMajors(String majors){
-        this.availableMajors = majors;
     }
 
     public String getAvailableMajors(){

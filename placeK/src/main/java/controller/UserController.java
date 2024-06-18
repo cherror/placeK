@@ -9,16 +9,12 @@ import org.bson.Document;
 import model.User;
 
 import javax.servlet.http.HttpSession;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
+
 
 public class UserController {
     private MongoClient mongoClient;
@@ -49,31 +45,6 @@ public class UserController {
                 .append("rentedTime", user.getRentedTime());
         collection.insertOne(document);
         return true;
-    }
-
-    //유저 로그인
-    public Map<String, Object> loginUser(int userID, String password) {
-        MongoDatabase db = mongoClient.getDatabase("OOAD");
-        MongoCollection<Document> collection = db.getCollection("users");
-        Document query = new Document("userID", userID);
-        Document userDoc = collection.find(query).first();
-        Map<String, Object> result = new HashMap<>();
-        //해당 ID가 존재하지 않는 경우
-        if(userDoc == null){
-            result.put("status", false);
-            result.put("message", "해당 ID를 찾을 수 없습니다.");
-        } else {
-            String storedPassword = userDoc.getString("password");
-            if(storedPassword.equals(password)) {
-                result.put("status", true);
-                result.put("userID", userID);
-                result.put("message", "로그인 성공");
-            } else {
-                result.put("status", false);
-                result.put("message", "잘못된 비밀번호입니다.");
-            }
-        }
-        return result;
     }
 
     public User getUserInfo(int userID) {

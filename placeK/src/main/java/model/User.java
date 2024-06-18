@@ -26,24 +26,12 @@ public class User {
         this.returnTime = returnTime;
     }
 
-    public void setID(int id) {
-        this.userId = id;
-    }
-
     public int getID() {
         return userId;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
     public String getPassword() {
         return password;
-    }
-
-    public void setMajor(String major) {
-        this.major = major;
     }
 
     public String getMajor() {

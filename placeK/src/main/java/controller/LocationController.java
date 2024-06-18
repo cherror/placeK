@@ -13,20 +13,6 @@ public class LocationController {
         this.mongoClient = mongoClient;
     }
 
-    public String getMajorList(int locationID){
-        MongoDatabase db = mongoClient.getDatabase("OOAD");
-        MongoCollection<Document> collection = db.getCollection("locations");
-
-        Document query = new Document("locationID", locationID);
-        Document result = collection.find(query).first();
-
-        if (result != null) {
-            return result.getString("availableMajors");
-        } else {
-            return null;
-        }
-    }
-
     public Location getLocationInfo(int locationID){
         MongoDatabase db = mongoClient.getDatabase("OOAD");
         MongoCollection<Document> collection = db.getCollection("locations");

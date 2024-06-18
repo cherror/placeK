@@ -39,40 +39,12 @@ public class Seat {
         return locationID;
     }
 
-    public void setIsRented(boolean isRented) {
-        this.isRented = isRented;
-    }
-
     public boolean getIsRented() {
         return isRented;
     }
 
-    public void setRentTime() {
-        LocalTime now = LocalTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
-        this.rentedTime = now.format(formatter);
-    }
-
     public String getRentTime() {
         return rentedTime;
-    }
-
-    public void setReturnTime() {
-        LocalTime now = LocalTime.now();
-        //테스트 코드 - 반납시간 1분 뒤로 설정
-        LocalTime later = now.plusMinutes(1);
-        //LocalTime later = now.plusHours(2);
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
-        this.returnTime = later.format(formatter);
-    }
-
-
-    public void setRentedBy(String rentedBy) {
-        this.rentedBy = rentedBy;
-    }
-
-    public String getRentedBy() {
-        return rentedBy;
     }
 
     public String getSeatNumber() {
