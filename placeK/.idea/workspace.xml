@@ -9,28 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="create: logout link">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SeatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SeatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Seat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/res/SeatAutoReturnService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/res/SeatAutoReturnService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/DisplaySeatInfoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/DisplaySeatInfoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/displaySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/displaySeat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/html/displaySeat/jjs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/displaySeatInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/displaySeatInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/SeatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/SeatController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Seat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Seat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/res/SeatAutoReturnService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/res/SeatAutoReturnService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/servlet/DisplaySeatInfoServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/servlet/DisplaySeatInfoServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/WEB-INF/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/WEB-INF/classes/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/css/displaySeat.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/css/displaySeat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/html/displaySeat/jjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/html/displaySeat/jjs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/place/js/displaySeatInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/place/js/displaySeatInfo.js" afterDir="false" />
-    </list>
+    <list default="true" id="aafaab49-c076-4b5f-b5ed-3097bff4c8a6" name="변경" comment="create: logout link" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,29 +65,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript 디버그.checkMySeat.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript 디버그.jjs.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript 디버그.rentedSeat.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Tomcat 서버.Tomcat 9.0.89.executor&quot;: &quot;Run&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;backend&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript 디버그.checkMySeat.html.executor": "Run",
+    "JavaScript 디버그.jjs.html.executor": "Run",
+    "JavaScript 디버그.rentedSeat.html.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat 서버.Tomcat 9.0.89.executor": "Run",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "backend 병합 중",
+    "kotlin-language-version-configured": "true",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/img" />
