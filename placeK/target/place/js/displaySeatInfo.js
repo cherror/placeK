@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const seatID = `seat${seat.seatNum}`;
                 const seatElement = document.getElementById(seatID);
                 const status = seat.isRented ? 'occupied' : 'available';
-                // const remainingTime = seat.remainingTime;
                 seatElement.classList.add(status);
 
                 const seatInfoTextElement = seatElement.querySelector('.seat-info-text');

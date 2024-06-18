@@ -71,7 +71,7 @@ public class User {
     public void setReturnTime() {
         LocalTime now = LocalTime.now();
         //테스트 코드 - 반납시간 1분 뒤로 설정
-        LocalTime later = now.plusMinutes(1);
+        LocalTime later = now.plusMinutes(5);
         //LocalTime later = now.plusHours(2);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm");
         this.returnTime = later.format(formatter);
